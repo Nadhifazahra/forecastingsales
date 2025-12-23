@@ -1,0 +1,819 @@
+Tanggal,Kategori,Nilai,Jenis,Model
+2023-02-05,Aksesoris,36.74999999999999,Aktual,XGBoost
+2023-02-19,Aksesoris,59.666666666666686,Aktual,XGBoost
+2023-03-05,Aksesoris,83.16666666666666,Aktual,XGBoost
+2023-03-19,Aksesoris,83.16666666666666,Aktual,XGBoost
+2023-04-02,Aksesoris,63.16666666666666,Aktual,XGBoost
+2023-04-16,Aksesoris,61.16666666666666,Aktual,XGBoost
+2023-04-30,Aksesoris,65.66666666666669,Aktual,XGBoost
+2023-05-14,Aksesoris,71.0,Aktual,XGBoost
+2023-05-28,Aksesoris,57.50000000000001,Aktual,XGBoost
+2023-06-11,Aksesoris,57.66666666666668,Aktual,XGBoost
+2023-06-25,Aksesoris,78.16666666666664,Aktual,XGBoost
+2023-07-09,Aksesoris,103.83333333333334,Aktual,XGBoost
+2023-07-23,Aksesoris,138.6666666666667,Aktual,XGBoost
+2023-08-06,Aksesoris,156.16666666666663,Aktual,XGBoost
+2023-08-20,Aksesoris,140.3333333333333,Aktual,XGBoost
+2023-09-03,Aksesoris,86.50000000000003,Aktual,XGBoost
+2023-09-17,Aksesoris,48.6666666666667,Aktual,XGBoost
+2023-10-01,Aksesoris,48.000000000000014,Aktual,XGBoost
+2023-10-15,Aksesoris,57.33333333333334,Aktual,XGBoost
+2023-10-29,Aksesoris,51.00000000000001,Aktual,XGBoost
+2023-11-12,Aksesoris,33.83333333333335,Aktual,XGBoost
+2023-11-26,Aksesoris,46.83333333333335,Aktual,XGBoost
+2023-12-10,Aksesoris,84.50000000000003,Aktual,XGBoost
+2023-12-24,Aksesoris,100.00000000000004,Aktual,XGBoost
+2024-01-07,Aksesoris,82.00000000000003,Aktual,XGBoost
+2024-01-21,Aksesoris,60.16666666666666,Aktual,XGBoost
+2024-02-04,Aksesoris,59.00000000000004,Aktual,XGBoost
+2024-02-18,Aksesoris,62.66666666666665,Aktual,XGBoost
+2024-03-03,Aksesoris,78.83333333333334,Aktual,XGBoost
+2024-03-17,Aksesoris,119.49999999999996,Aktual,XGBoost
+2024-03-31,Aksesoris,150.50000000000006,Aktual,XGBoost
+2024-04-14,Aksesoris,129.66666666666669,Aktual,XGBoost
+2024-04-28,Aksesoris,69.5,Aktual,XGBoost
+2024-05-12,Aksesoris,24.66666666666668,Aktual,XGBoost
+2024-05-26,Aksesoris,22.83333333333335,Aktual,XGBoost
+2024-06-09,Aksesoris,60.33333333333333,Aktual,XGBoost
+2024-06-23,Aksesoris,131.83333333333331,Aktual,XGBoost
+2024-07-07,Aksesoris,191.0,Aktual,XGBoost
+2024-07-21,Aksesoris,197.16666666666677,Aktual,XGBoost
+2024-08-04,Aksesoris,161.83333333333334,Aktual,XGBoost
+2024-08-18,Aksesoris,121.66666666666669,Aktual,XGBoost
+2024-09-01,Aksesoris,107.8333333333334,Aktual,XGBoost
+2024-09-15,Aksesoris,90.83333333333331,Aktual,XGBoost
+2024-09-29,Aksesoris,71.66666666666663,Aktual,XGBoost
+2024-10-13,Aksesoris,59.666666666666686,Aktual,XGBoost
+2024-10-27,Aksesoris,63.99999999999998,Aktual,XGBoost
+2024-11-10,Aksesoris,108.66666666666664,Aktual,XGBoost
+2024-11-24,Aksesoris,150.50000000000006,Aktual,XGBoost
+2024-12-08,Aksesoris,149.49999999999994,Aktual,XGBoost
+2024-12-22,Aksesoris,99.66666666666664,Aktual,XGBoost
+2025-01-05,Aksesoris,50.16666666666667,Aktual,XGBoost
+2025-01-19,Aksesoris,72.33333333333334,Aktual,XGBoost
+2025-02-02,Aksesoris,115.33333333333329,Aktual,XGBoost
+2025-02-16,Aksesoris,141.50000000000003,Aktual,XGBoost
+2025-03-02,Aksesoris,136.50000000000003,Aktual,XGBoost
+2025-03-16,Aksesoris,141.6666666666667,Aktual,XGBoost
+2025-03-30,Aksesoris,149.66666666666669,Aktual,XGBoost
+2025-04-13,Aksesoris,113.16666666666666,Aktual,XGBoost
+2025-04-27,Aksesoris,58.50000000000001,Aktual,XGBoost
+2025-05-11,Aksesoris,28.500000000000004,Aktual,XGBoost
+2025-05-25,Aksesoris,77.33333333333337,Aktual,XGBoost
+2025-06-08,Aksesoris,149.49999999999994,Aktual,XGBoost
+2025-06-22,Aksesoris,194.0,Aktual,XGBoost
+2025-07-06,Aksesoris,181.3333333333333,Aktual,XGBoost
+2025-07-20,Aksesoris,130.33333333333331,Aktual,XGBoost
+2025-08-03,Aksesoris,83.33333333333331,Aktual,XGBoost
+2025-08-17,Aksesoris,57.166666666666686,Aktual,XGBoost
+2025-08-31,Aksesoris,53.166666666666686,Aktual,XGBoost
+2025-09-14,Aksesoris,51.5,Aktual,XGBoost
+2025-09-28,Aksesoris,56.5,Aktual,XGBoost
+2025-10-12,Aksesoris,60.66666666666668,Aktual,XGBoost
+2025-10-26,Aksesoris,56.33333333333335,Aktual,XGBoost
+2025-11-09,Aksesoris,41.50000000000001,Aktual,XGBoost
+2025-11-23,Aksesoris,25.333333333333336,Aktual,XGBoost
+2025-12-07,Aksesoris,23.66666666666667,Aktual,XGBoost
+2025-09-14,Aksesoris,40.7276496887207,Test,XGBoost
+2025-09-28,Aksesoris,40.506046295166016,Test,XGBoost
+2025-10-12,Aksesoris,47.92422103881836,Test,XGBoost
+2025-10-26,Aksesoris,75.7177963256836,Test,XGBoost
+2025-11-09,Aksesoris,40.95387649536133,Test,XGBoost
+2025-11-23,Aksesoris,54.01409149169922,Test,XGBoost
+2025-12-07,Aksesoris,34.53328323364258,Test,XGBoost
+2025-12-21,Aksesoris,34.53328323364258,Future,XGBoost
+2026-01-04,Aksesoris,40.531280517578125,Future,XGBoost
+2026-01-18,Aksesoris,43.2243537902832,Future,XGBoost
+2026-02-01,Aksesoris,43.2243537902832,Future,XGBoost
+2023-02-05,Fashion Bayi & Anak lainnya,364.0,Aktual,XGBoost
+2023-02-19,Fashion Bayi & Anak lainnya,489.9999999999999,Aktual,XGBoost
+2023-03-05,Fashion Bayi & Anak lainnya,487.00000000000017,Aktual,XGBoost
+2023-03-19,Fashion Bayi & Anak lainnya,483.0000000000002,Aktual,XGBoost
+2023-04-02,Fashion Bayi & Anak lainnya,598.0,Aktual,XGBoost
+2023-04-16,Fashion Bayi & Anak lainnya,974.4999999999995,Aktual,XGBoost
+2023-04-30,Fashion Bayi & Anak lainnya,857.5000000000002,Aktual,XGBoost
+2023-05-14,Fashion Bayi & Anak lainnya,281.00000000000006,Aktual,XGBoost
+2023-05-28,Fashion Bayi & Anak lainnya,104.99999999999996,Aktual,XGBoost
+2023-06-11,Fashion Bayi & Anak lainnya,292.50000000000006,Aktual,XGBoost
+2023-06-25,Fashion Bayi & Anak lainnya,403.00000000000017,Aktual,XGBoost
+2023-07-09,Fashion Bayi & Anak lainnya,364.9999999999999,Aktual,XGBoost
+2023-07-23,Fashion Bayi & Anak lainnya,402.50000000000006,Aktual,XGBoost
+2023-08-06,Fashion Bayi & Anak lainnya,446.5,Aktual,XGBoost
+2023-08-20,Fashion Bayi & Anak lainnya,514.5000000000001,Aktual,XGBoost
+2023-09-03,Fashion Bayi & Anak lainnya,538.0000000000002,Aktual,XGBoost
+2023-09-17,Fashion Bayi & Anak lainnya,528.5,Aktual,XGBoost
+2023-10-01,Fashion Bayi & Anak lainnya,495.5000000000001,Aktual,XGBoost
+2023-10-15,Fashion Bayi & Anak lainnya,377.0000000000001,Aktual,XGBoost
+2023-10-29,Fashion Bayi & Anak lainnya,351.50000000000006,Aktual,XGBoost
+2023-11-12,Fashion Bayi & Anak lainnya,381.0,Aktual,XGBoost
+2023-11-26,Fashion Bayi & Anak lainnya,344.5000000000001,Aktual,XGBoost
+2023-12-10,Fashion Bayi & Anak lainnya,368.9999999999999,Aktual,XGBoost
+2023-12-24,Fashion Bayi & Anak lainnya,378.5000000000001,Aktual,XGBoost
+2024-01-07,Fashion Bayi & Anak lainnya,359.00000000000006,Aktual,XGBoost
+2024-01-21,Fashion Bayi & Anak lainnya,357.4999999999999,Aktual,XGBoost
+2024-02-04,Fashion Bayi & Anak lainnya,287.50000000000006,Aktual,XGBoost
+2024-02-18,Fashion Bayi & Anak lainnya,231.99999999999991,Aktual,XGBoost
+2024-03-03,Fashion Bayi & Anak lainnya,328.0,Aktual,XGBoost
+2024-03-17,Fashion Bayi & Anak lainnya,446.5,Aktual,XGBoost
+2024-03-31,Fashion Bayi & Anak lainnya,759.4999999999998,Aktual,XGBoost
+2024-04-14,Fashion Bayi & Anak lainnya,871.4999999999999,Aktual,XGBoost
+2024-04-28,Fashion Bayi & Anak lainnya,375.5,Aktual,XGBoost
+2024-05-12,Fashion Bayi & Anak lainnya,192.0,Aktual,XGBoost
+2024-05-26,Fashion Bayi & Anak lainnya,228.00000000000009,Aktual,XGBoost
+2024-06-09,Fashion Bayi & Anak lainnya,179.50000000000006,Aktual,XGBoost
+2024-06-23,Fashion Bayi & Anak lainnya,231.99999999999991,Aktual,XGBoost
+2024-07-07,Fashion Bayi & Anak lainnya,291.0,Aktual,XGBoost
+2024-07-21,Fashion Bayi & Anak lainnya,305.9999999999999,Aktual,XGBoost
+2024-08-04,Fashion Bayi & Anak lainnya,317.49999999999994,Aktual,XGBoost
+2024-08-18,Fashion Bayi & Anak lainnya,394.5000000000001,Aktual,XGBoost
+2024-09-01,Fashion Bayi & Anak lainnya,355.5,Aktual,XGBoost
+2024-09-15,Fashion Bayi & Anak lainnya,284.50000000000006,Aktual,XGBoost
+2024-09-29,Fashion Bayi & Anak lainnya,259.5,Aktual,XGBoost
+2024-10-13,Fashion Bayi & Anak lainnya,237.00000000000009,Aktual,XGBoost
+2024-10-27,Fashion Bayi & Anak lainnya,219.5,Aktual,XGBoost
+2024-11-10,Fashion Bayi & Anak lainnya,205.50000000000009,Aktual,XGBoost
+2024-11-24,Fashion Bayi & Anak lainnya,269.00000000000006,Aktual,XGBoost
+2024-12-08,Fashion Bayi & Anak lainnya,268.5000000000001,Aktual,XGBoost
+2024-12-22,Fashion Bayi & Anak lainnya,226.49999999999997,Aktual,XGBoost
+2025-01-05,Fashion Bayi & Anak lainnya,266.99999999999994,Aktual,XGBoost
+2025-01-19,Fashion Bayi & Anak lainnya,250.5,Aktual,XGBoost
+2025-02-02,Fashion Bayi & Anak lainnya,256.50000000000006,Aktual,XGBoost
+2025-02-16,Fashion Bayi & Anak lainnya,317.99999999999994,Aktual,XGBoost
+2025-03-02,Fashion Bayi & Anak lainnya,473.5000000000001,Aktual,XGBoost
+2025-03-16,Fashion Bayi & Anak lainnya,871.0,Aktual,XGBoost
+2025-03-30,Fashion Bayi & Anak lainnya,1025.5000000000002,Aktual,XGBoost
+2025-04-13,Fashion Bayi & Anak lainnya,464.99999999999983,Aktual,XGBoost
+2025-04-27,Fashion Bayi & Anak lainnya,76.5,Aktual,XGBoost
+2025-05-11,Fashion Bayi & Anak lainnya,113.00000000000004,Aktual,XGBoost
+2025-05-25,Fashion Bayi & Anak lainnya,173.49999999999994,Aktual,XGBoost
+2025-06-08,Fashion Bayi & Anak lainnya,252.50000000000009,Aktual,XGBoost
+2025-06-22,Fashion Bayi & Anak lainnya,402.50000000000006,Aktual,XGBoost
+2025-07-06,Fashion Bayi & Anak lainnya,470.0,Aktual,XGBoost
+2025-07-20,Fashion Bayi & Anak lainnya,314.5000000000001,Aktual,XGBoost
+2025-08-03,Fashion Bayi & Anak lainnya,213.99999999999991,Aktual,XGBoost
+2025-08-17,Fashion Bayi & Anak lainnya,193.0,Aktual,XGBoost
+2025-08-31,Fashion Bayi & Anak lainnya,222.00000000000003,Aktual,XGBoost
+2025-09-14,Fashion Bayi & Anak lainnya,207.0,Aktual,XGBoost
+2025-09-28,Fashion Bayi & Anak lainnya,199.5,Aktual,XGBoost
+2025-10-12,Fashion Bayi & Anak lainnya,194.0,Aktual,XGBoost
+2025-10-26,Fashion Bayi & Anak lainnya,165.5,Aktual,XGBoost
+2025-11-09,Fashion Bayi & Anak lainnya,202.50000000000009,Aktual,XGBoost
+2025-11-23,Fashion Bayi & Anak lainnya,201.50000000000009,Aktual,XGBoost
+2025-12-07,Fashion Bayi & Anak lainnya,144.50000000000003,Aktual,XGBoost
+2025-09-14,Fashion Bayi & Anak lainnya,207.286865234375,Test,XGBoost
+2025-09-28,Fashion Bayi & Anak lainnya,216.48370361328125,Test,XGBoost
+2025-10-12,Fashion Bayi & Anak lainnya,216.48370361328125,Test,XGBoost
+2025-10-26,Fashion Bayi & Anak lainnya,216.48370361328125,Test,XGBoost
+2025-11-09,Fashion Bayi & Anak lainnya,203.8595733642578,Test,XGBoost
+2025-11-23,Fashion Bayi & Anak lainnya,249.2761383056641,Test,XGBoost
+2025-12-07,Fashion Bayi & Anak lainnya,200.49751859514305,Test,XGBoost
+2025-12-21,Fashion Bayi & Anak lainnya,264.15362548828125,Future,XGBoost
+2026-01-04,Fashion Bayi & Anak lainnya,275.35308837890625,Future,XGBoost
+2026-01-18,Fashion Bayi & Anak lainnya,211.5199737548828,Future,XGBoost
+2026-02-01,Fashion Bayi & Anak lainnya,302.521728515625,Future,XGBoost
+2024-01-07,Fashion Muslim,170.99999999999994,Aktual,XGBoost
+2024-01-21,Fashion Muslim,212.00000000000009,Aktual,XGBoost
+2024-02-04,Fashion Muslim,177.50000000000009,Aktual,XGBoost
+2024-02-18,Fashion Muslim,163.99999999999994,Aktual,XGBoost
+2024-03-03,Fashion Muslim,181.0,Aktual,XGBoost
+2024-03-17,Fashion Muslim,335.0,Aktual,XGBoost
+2024-03-31,Fashion Muslim,601.4999999999999,Aktual,XGBoost
+2024-04-14,Fashion Muslim,566.5000000000002,Aktual,XGBoost
+2024-04-28,Fashion Muslim,201.50000000000009,Aktual,XGBoost
+2024-05-12,Fashion Muslim,10.000000000000002,Aktual,XGBoost
+2024-05-26,Fashion Muslim,7.5,Aktual,XGBoost
+2024-06-09,Fashion Muslim,13.5,Aktual,XGBoost
+2024-06-23,Fashion Muslim,24.0,Aktual,XGBoost
+2024-07-07,Fashion Muslim,37.50000000000001,Aktual,XGBoost
+2024-07-21,Fashion Muslim,55.00000000000002,Aktual,XGBoost
+2024-08-04,Fashion Muslim,53.00000000000001,Aktual,XGBoost
+2024-08-18,Fashion Muslim,41.0,Aktual,XGBoost
+2024-09-01,Fashion Muslim,40.500000000000014,Aktual,XGBoost
+2024-09-15,Fashion Muslim,26.500000000000004,Aktual,XGBoost
+2024-09-29,Fashion Muslim,36.0,Aktual,XGBoost
+2024-10-13,Fashion Muslim,61.50000000000002,Aktual,XGBoost
+2024-10-27,Fashion Muslim,56.00000000000001,Aktual,XGBoost
+2024-11-10,Fashion Muslim,39.0,Aktual,XGBoost
+2024-11-24,Fashion Muslim,30.499999999999996,Aktual,XGBoost
+2024-12-08,Fashion Muslim,45.0,Aktual,XGBoost
+2024-12-22,Fashion Muslim,79.5,Aktual,XGBoost
+2025-01-05,Fashion Muslim,102.0,Aktual,XGBoost
+2025-01-19,Fashion Muslim,91.0,Aktual,XGBoost
+2025-02-02,Fashion Muslim,92.5,Aktual,XGBoost
+2025-02-16,Fashion Muslim,145.0,Aktual,XGBoost
+2025-03-02,Fashion Muslim,234.5,Aktual,XGBoost
+2025-03-16,Fashion Muslim,392.0,Aktual,XGBoost
+2025-03-30,Fashion Muslim,523.9999999999999,Aktual,XGBoost
+2025-04-13,Fashion Muslim,274.0000000000001,Aktual,XGBoost
+2025-04-27,Fashion Muslim,5.5,Aktual,XGBoost
+2025-05-11,Fashion Muslim,6.0,Aktual,XGBoost
+2025-05-25,Fashion Muslim,13.000000000000004,Aktual,XGBoost
+2025-06-08,Fashion Muslim,41.0,Aktual,XGBoost
+2025-06-22,Fashion Muslim,116.5,Aktual,XGBoost
+2025-07-06,Fashion Muslim,119.49999999999996,Aktual,XGBoost
+2025-07-20,Fashion Muslim,46.49999999999999,Aktual,XGBoost
+2025-08-03,Fashion Muslim,22.0,Aktual,XGBoost
+2025-08-17,Fashion Muslim,14.0,Aktual,XGBoost
+2025-08-31,Fashion Muslim,22.499999999999996,Aktual,XGBoost
+2025-09-14,Fashion Muslim,23.500000000000007,Aktual,XGBoost
+2025-09-28,Fashion Muslim,21.000000000000004,Aktual,XGBoost
+2025-10-12,Fashion Muslim,21.000000000000004,Aktual,XGBoost
+2025-10-26,Fashion Muslim,19.5,Aktual,XGBoost
+2025-11-09,Fashion Muslim,27.5,Aktual,XGBoost
+2025-11-23,Fashion Muslim,35.0,Aktual,XGBoost
+2025-12-07,Fashion Muslim,47.99999999999999,Aktual,XGBoost
+2025-10-12,Fashion Muslim,22.69503593444824,Test,XGBoost
+2025-10-26,Fashion Muslim,23.89717483520508,Test,XGBoost
+2025-11-09,Fashion Muslim,22.666793823242188,Test,XGBoost
+2025-11-23,Fashion Muslim,42.756160736083984,Test,XGBoost
+2025-12-07,Fashion Muslim,50.65113067626953,Test,XGBoost
+2025-12-21,Fashion Muslim,76.41305541992188,Future,XGBoost
+2026-01-04,Fashion Muslim,89.92457580566406,Future,XGBoost
+2026-01-18,Fashion Muslim,50.803749084472656,Future,XGBoost
+2026-02-01,Fashion Muslim,16.544137954711914,Future,XGBoost
+2024-01-07,Pakaian Laki-laki,91.0,Aktual,XGBoost
+2024-01-21,Pakaian Laki-laki,60.00000000000001,Aktual,XGBoost
+2024-02-04,Pakaian Laki-laki,47.5,Aktual,XGBoost
+2024-02-18,Pakaian Laki-laki,65.99999999999997,Aktual,XGBoost
+2024-03-03,Pakaian Laki-laki,73.5,Aktual,XGBoost
+2024-03-17,Pakaian Laki-laki,165.5,Aktual,XGBoost
+2024-03-31,Pakaian Laki-laki,328.49999999999994,Aktual,XGBoost
+2024-04-14,Pakaian Laki-laki,344.99999999999983,Aktual,XGBoost
+2024-04-28,Pakaian Laki-laki,159.49999999999997,Aktual,XGBoost
+2024-05-12,Pakaian Laki-laki,39.0,Aktual,XGBoost
+2024-05-26,Pakaian Laki-laki,29.000000000000004,Aktual,XGBoost
+2024-06-09,Pakaian Laki-laki,13.000000000000004,Aktual,XGBoost
+2024-06-23,Pakaian Laki-laki,17.499999999999996,Aktual,XGBoost
+2024-07-07,Pakaian Laki-laki,47.5,Aktual,XGBoost
+2024-07-21,Pakaian Laki-laki,117.50000000000004,Aktual,XGBoost
+2024-08-04,Pakaian Laki-laki,112.5,Aktual,XGBoost
+2024-08-18,Pakaian Laki-laki,105.50000000000004,Aktual,XGBoost
+2024-09-01,Pakaian Laki-laki,113.00000000000004,Aktual,XGBoost
+2024-09-15,Pakaian Laki-laki,80.00000000000003,Aktual,XGBoost
+2024-09-29,Pakaian Laki-laki,107.99999999999996,Aktual,XGBoost
+2024-10-13,Pakaian Laki-laki,133.49999999999997,Aktual,XGBoost
+2024-10-27,Pakaian Laki-laki,113.50000000000004,Aktual,XGBoost
+2024-11-10,Pakaian Laki-laki,82.50000000000003,Aktual,XGBoost
+2024-11-24,Pakaian Laki-laki,75.49999999999997,Aktual,XGBoost
+2024-12-08,Pakaian Laki-laki,80.00000000000003,Aktual,XGBoost
+2024-12-22,Pakaian Laki-laki,66.5,Aktual,XGBoost
+2025-01-05,Pakaian Laki-laki,47.99999999999999,Aktual,XGBoost
+2025-01-19,Pakaian Laki-laki,51.5,Aktual,XGBoost
+2025-02-02,Pakaian Laki-laki,63.49999999999999,Aktual,XGBoost
+2025-02-16,Pakaian Laki-laki,53.50000000000001,Aktual,XGBoost
+2025-03-02,Pakaian Laki-laki,92.00000000000004,Aktual,XGBoost
+2025-03-16,Pakaian Laki-laki,163.5,Aktual,XGBoost
+2025-03-30,Pakaian Laki-laki,190.50000000000009,Aktual,XGBoost
+2025-04-13,Pakaian Laki-laki,103.0,Aktual,XGBoost
+2025-04-27,Pakaian Laki-laki,9.5,Aktual,XGBoost
+2025-05-11,Pakaian Laki-laki,12.5,Aktual,XGBoost
+2025-05-25,Pakaian Laki-laki,15.499999999999998,Aktual,XGBoost
+2025-06-08,Pakaian Laki-laki,16.999999999999996,Aktual,XGBoost
+2025-06-22,Pakaian Laki-laki,72.99999999999997,Aktual,XGBoost
+2025-07-06,Pakaian Laki-laki,99.00000000000004,Aktual,XGBoost
+2025-07-20,Pakaian Laki-laki,82.99999999999997,Aktual,XGBoost
+2025-08-03,Pakaian Laki-laki,79.5,Aktual,XGBoost
+2025-08-17,Pakaian Laki-laki,51.5,Aktual,XGBoost
+2025-08-31,Pakaian Laki-laki,37.50000000000001,Aktual,XGBoost
+2025-09-14,Pakaian Laki-laki,39.0,Aktual,XGBoost
+2025-09-28,Pakaian Laki-laki,43.50000000000001,Aktual,XGBoost
+2025-10-12,Pakaian Laki-laki,43.99999999999999,Aktual,XGBoost
+2025-10-26,Pakaian Laki-laki,48.49999999999999,Aktual,XGBoost
+2025-11-09,Pakaian Laki-laki,52.00000000000001,Aktual,XGBoost
+2025-11-23,Pakaian Laki-laki,67.00000000000001,Aktual,XGBoost
+2025-12-07,Pakaian Laki-laki,63.49999999999999,Aktual,XGBoost
+2025-10-12,Pakaian Laki-laki,52.74720001220703,Test,XGBoost
+2025-10-26,Pakaian Laki-laki,36.58566284179688,Test,XGBoost
+2025-11-09,Pakaian Laki-laki,56.76786804199219,Test,XGBoost
+2025-11-23,Pakaian Laki-laki,62.094329833984375,Test,XGBoost
+2025-12-07,Pakaian Laki-laki,67.42821502685547,Test,XGBoost
+2025-12-21,Pakaian Laki-laki,66.8143310546875,Future,XGBoost
+2026-01-04,Pakaian Laki-laki,50.67118453979492,Future,XGBoost
+2026-01-18,Pakaian Laki-laki,46.66831207275391,Future,XGBoost
+2026-02-01,Pakaian Laki-laki,36.031005859375,Future,XGBoost
+2023-02-05,Pakaian Perempuan,118.99999999999996,Aktual,XGBoost
+2023-02-19,Pakaian Perempuan,75.0,Aktual,XGBoost
+2023-03-05,Pakaian Perempuan,95.0,Aktual,XGBoost
+2023-03-19,Pakaian Perempuan,137.5,Aktual,XGBoost
+2023-04-02,Pakaian Perempuan,174.99999999999994,Aktual,XGBoost
+2023-04-16,Pakaian Perempuan,272.0,Aktual,XGBoost
+2023-04-30,Pakaian Perempuan,215.49999999999997,Aktual,XGBoost
+2023-05-14,Pakaian Perempuan,95.0,Aktual,XGBoost
+2023-05-28,Pakaian Perempuan,146.50000000000006,Aktual,XGBoost
+2023-06-11,Pakaian Perempuan,172.5,Aktual,XGBoost
+2023-06-25,Pakaian Perempuan,136.00000000000003,Aktual,XGBoost
+2023-07-09,Pakaian Perempuan,125.5,Aktual,XGBoost
+2023-07-23,Pakaian Perempuan,325.0,Aktual,XGBoost
+2023-08-06,Pakaian Perempuan,387.00000000000006,Aktual,XGBoost
+2023-08-20,Pakaian Perempuan,234.5,Aktual,XGBoost
+2023-09-03,Pakaian Perempuan,210.00000000000003,Aktual,XGBoost
+2023-09-17,Pakaian Perempuan,285.50000000000006,Aktual,XGBoost
+2023-10-01,Pakaian Perempuan,229.5,Aktual,XGBoost
+2023-10-15,Pakaian Perempuan,120.00000000000004,Aktual,XGBoost
+2023-10-29,Pakaian Perempuan,141.50000000000003,Aktual,XGBoost
+2023-11-12,Pakaian Perempuan,162.0,Aktual,XGBoost
+2023-11-26,Pakaian Perempuan,176.99999999999997,Aktual,XGBoost
+2023-12-10,Pakaian Perempuan,150.50000000000006,Aktual,XGBoost
+2023-12-24,Pakaian Perempuan,110.99999999999996,Aktual,XGBoost
+2024-01-07,Pakaian Perempuan,86.0,Aktual,XGBoost
+2024-01-21,Pakaian Perempuan,98.49999999999996,Aktual,XGBoost
+2024-02-04,Pakaian Perempuan,143.99999999999997,Aktual,XGBoost
+2024-02-18,Pakaian Perempuan,118.99999999999996,Aktual,XGBoost
+2024-03-03,Pakaian Perempuan,67.00000000000001,Aktual,XGBoost
+2024-03-17,Pakaian Perempuan,145.50000000000003,Aktual,XGBoost
+2024-03-31,Pakaian Perempuan,260.99999999999994,Aktual,XGBoost
+2024-04-14,Pakaian Perempuan,287.00000000000006,Aktual,XGBoost
+2024-04-28,Pakaian Perempuan,159.49999999999997,Aktual,XGBoost
+2024-05-12,Pakaian Perempuan,38.5,Aktual,XGBoost
+2024-05-26,Pakaian Perempuan,91.0,Aktual,XGBoost
+2024-06-09,Pakaian Perempuan,110.99999999999996,Aktual,XGBoost
+2024-06-23,Pakaian Perempuan,112.00000000000004,Aktual,XGBoost
+2024-07-07,Pakaian Perempuan,145.50000000000003,Aktual,XGBoost
+2024-07-21,Pakaian Perempuan,116.5,Aktual,XGBoost
+2024-08-04,Pakaian Perempuan,95.5,Aktual,XGBoost
+2024-08-18,Pakaian Perempuan,120.00000000000004,Aktual,XGBoost
+2024-09-01,Pakaian Perempuan,123.00000000000004,Aktual,XGBoost
+2024-09-15,Pakaian Perempuan,98.49999999999996,Aktual,XGBoost
+2024-09-29,Pakaian Perempuan,84.99999999999997,Aktual,XGBoost
+2024-10-13,Pakaian Perempuan,95.5,Aktual,XGBoost
+2024-10-27,Pakaian Perempuan,96.0,Aktual,XGBoost
+2024-11-10,Pakaian Perempuan,94.5,Aktual,XGBoost
+2024-11-24,Pakaian Perempuan,111.5,Aktual,XGBoost
+2024-12-08,Pakaian Perempuan,84.99999999999997,Aktual,XGBoost
+2024-12-22,Pakaian Perempuan,58.99999999999999,Aktual,XGBoost
+2025-01-05,Pakaian Perempuan,67.5,Aktual,XGBoost
+2025-01-19,Pakaian Perempuan,76.00000000000003,Aktual,XGBoost
+2025-02-02,Pakaian Perempuan,53.50000000000001,Aktual,XGBoost
+2025-02-16,Pakaian Perempuan,69.5,Aktual,XGBoost
+2025-03-02,Pakaian Perempuan,135.00000000000006,Aktual,XGBoost
+2025-03-16,Pakaian Perempuan,167.49999999999994,Aktual,XGBoost
+2025-03-30,Pakaian Perempuan,155.99999999999994,Aktual,XGBoost
+2025-04-13,Pakaian Perempuan,78.5,Aktual,XGBoost
+2025-04-27,Pakaian Perempuan,39.49999999999999,Aktual,XGBoost
+2025-05-11,Pakaian Perempuan,45.99999999999999,Aktual,XGBoost
+2025-05-25,Pakaian Perempuan,31.5,Aktual,XGBoost
+2025-06-08,Pakaian Perempuan,63.99999999999998,Aktual,XGBoost
+2025-06-22,Pakaian Perempuan,152.49999999999994,Aktual,XGBoost
+2025-07-06,Pakaian Perempuan,187.5,Aktual,XGBoost
+2025-07-20,Pakaian Perempuan,115.0,Aktual,XGBoost
+2025-08-03,Pakaian Perempuan,62.99999999999998,Aktual,XGBoost
+2025-08-17,Pakaian Perempuan,62.99999999999998,Aktual,XGBoost
+2025-08-31,Pakaian Perempuan,70.49999999999997,Aktual,XGBoost
+2025-09-14,Pakaian Perempuan,82.50000000000003,Aktual,XGBoost
+2025-09-28,Pakaian Perempuan,97.00000000000004,Aktual,XGBoost
+2025-10-12,Pakaian Perempuan,80.5,Aktual,XGBoost
+2025-10-26,Pakaian Perempuan,61.50000000000002,Aktual,XGBoost
+2025-11-09,Pakaian Perempuan,67.5,Aktual,XGBoost
+2025-11-23,Pakaian Perempuan,61.00000000000001,Aktual,XGBoost
+2025-12-07,Pakaian Perempuan,61.50000000000002,Aktual,XGBoost
+2025-09-14,Pakaian Perempuan,78.69252014160156,Test,XGBoost
+2025-09-28,Pakaian Perempuan,76.94807434082031,Test,XGBoost
+2025-10-12,Pakaian Perempuan,97.14324951171876,Test,XGBoost
+2025-10-26,Pakaian Perempuan,81.62299346923828,Test,XGBoost
+2025-11-09,Pakaian Perempuan,74.41521453857422,Test,XGBoost
+2025-11-23,Pakaian Perempuan,76.57494354248047,Test,XGBoost
+2025-12-07,Pakaian Perempuan,70.11762237548828,Test,XGBoost
+2025-12-21,Pakaian Perempuan,66.03705596923828,Future,XGBoost
+2026-01-04,Pakaian Perempuan,72.12386322021484,Future,XGBoost
+2026-01-18,Pakaian Perempuan,77.4960708618164,Future,XGBoost
+2026-02-01,Pakaian Perempuan,88.72777557373047,Future,XGBoost
+2023-01-08,Aksesoris,1.0,Aktual,SARIMA
+2023-01-22,Aksesoris,24.5,Aktual,SARIMA
+2023-02-05,Aksesoris,49.0,Aktual,SARIMA
+2023-02-19,Aksesoris,70.33333333333333,Aktual,SARIMA
+2023-03-05,Aksesoris,96.0,Aktual,SARIMA
+2023-03-19,Aksesoris,70.33333333333333,Aktual,SARIMA
+2023-04-02,Aksesoris,56.0,Aktual,SARIMA
+2023-04-16,Aksesoris,66.33333333333333,Aktual,SARIMA
+2023-04-30,Aksesoris,65.0,Aktual,SARIMA
+2023-05-14,Aksesoris,77.0,Aktual,SARIMA
+2023-05-28,Aksesoris,38.0,Aktual,SARIMA
+2023-06-11,Aksesoris,77.33333333333333,Aktual,SARIMA
+2023-06-25,Aksesoris,79.0,Aktual,SARIMA
+2023-07-09,Aksesoris,128.66666666666666,Aktual,SARIMA
+2023-07-23,Aksesoris,148.66666666666666,Aktual,SARIMA
+2023-08-06,Aksesoris,163.66666666666666,Aktual,SARIMA
+2023-08-20,Aksesoris,117.0,Aktual,SARIMA
+2023-09-03,Aksesoris,56.0,Aktual,SARIMA
+2023-09-17,Aksesoris,41.333333333333336,Aktual,SARIMA
+2023-10-01,Aksesoris,54.66666666666666,Aktual,SARIMA
+2023-10-15,Aksesoris,60.0,Aktual,SARIMA
+2023-10-29,Aksesoris,42.0,Aktual,SARIMA
+2023-11-12,Aksesoris,25.666666666666668,Aktual,SARIMA
+2023-11-26,Aksesoris,68.0,Aktual,SARIMA
+2023-12-10,Aksesoris,101.0,Aktual,SARIMA
+2023-12-24,Aksesoris,99.0,Aktual,SARIMA
+2024-01-07,Aksesoris,65.0,Aktual,SARIMA
+2024-01-21,Aksesoris,55.333333333333336,Aktual,SARIMA
+2024-02-04,Aksesoris,62.66666666666666,Aktual,SARIMA
+2024-02-18,Aksesoris,62.66666666666666,Aktual,SARIMA
+2024-03-03,Aksesoris,95.0,Aktual,SARIMA
+2024-03-17,Aksesoris,144.0,Aktual,SARIMA
+2024-03-31,Aksesoris,157.0,Aktual,SARIMA
+2024-04-14,Aksesoris,102.33333333333331,Aktual,SARIMA
+2024-04-28,Aksesoris,36.66666666666666,Aktual,SARIMA
+2024-05-12,Aksesoris,12.666666666666666,Aktual,SARIMA
+2024-05-26,Aksesoris,33.0,Aktual,SARIMA
+2024-06-09,Aksesoris,87.66666666666667,Aktual,SARIMA
+2024-06-23,Aksesoris,176.0,Aktual,SARIMA
+2024-07-07,Aksesoris,206.0,Aktual,SARIMA
+2024-07-21,Aksesoris,188.33333333333331,Aktual,SARIMA
+2024-08-04,Aksesoris,135.33333333333334,Aktual,SARIMA
+2024-08-18,Aksesoris,108.0,Aktual,SARIMA
+2024-09-01,Aksesoris,107.66666666666669,Aktual,SARIMA
+2024-09-15,Aksesoris,74.0,Aktual,SARIMA
+2024-09-29,Aksesoris,69.33333333333333,Aktual,SARIMA
+2024-10-13,Aksesoris,50.0,Aktual,SARIMA
+2024-10-27,Aksesoris,78.0,Aktual,SARIMA
+2024-11-10,Aksesoris,139.33333333333334,Aktual,SARIMA
+2024-11-24,Aksesoris,161.66666666666666,Aktual,SARIMA
+2024-12-08,Aksesoris,137.33333333333334,Aktual,SARIMA
+2024-12-22,Aksesoris,62.0,Aktual,SARIMA
+2025-01-05,Aksesoris,38.333333333333336,Aktual,SARIMA
+2025-01-19,Aksesoris,106.33333333333331,Aktual,SARIMA
+2025-02-02,Aksesoris,124.33333333333331,Aktual,SARIMA
+2025-02-16,Aksesoris,158.66666666666666,Aktual,SARIMA
+2025-03-02,Aksesoris,114.33333333333331,Aktual,SARIMA
+2025-03-16,Aksesoris,169.0,Aktual,SARIMA
+2025-03-30,Aksesoris,130.33333333333334,Aktual,SARIMA
+2025-04-13,Aksesoris,96.0,Aktual,SARIMA
+2025-04-27,Aksesoris,21.0,Aktual,SARIMA
+2025-05-11,Aksesoris,36.0,Aktual,SARIMA
+2025-05-25,Aksesoris,118.66666666666669,Aktual,SARIMA
+2025-06-08,Aksesoris,180.33333333333331,Aktual,SARIMA
+2025-06-22,Aksesoris,207.66666666666663,Aktual,SARIMA
+2025-07-06,Aksesoris,155.0,Aktual,SARIMA
+2025-07-20,Aksesoris,105.66666666666669,Aktual,SARIMA
+2025-08-03,Aksesoris,61.0,Aktual,SARIMA
+2025-08-17,Aksesoris,53.333333333333336,Aktual,SARIMA
+2025-08-31,Aksesoris,53.0,Aktual,SARIMA
+2025-09-14,Aksesoris,50.0,Aktual,SARIMA
+2025-09-28,Aksesoris,63.0,Aktual,SARIMA
+2025-10-12,Aksesoris,58.333333333333336,Aktual,SARIMA
+2025-10-26,Aksesoris,54.333333333333336,Aktual,SARIMA
+2025-11-09,Aksesoris,28.666666666666668,Aktual,SARIMA
+2025-11-23,Aksesoris,22.0,Aktual,SARIMA
+2025-12-07,Aksesoris,25.33333333333333,Aktual,SARIMA
+2025-09-14,Aksesoris,48.39217800783607,Test,SARIMA
+2025-09-28,Aksesoris,43.46304234986441,Test,SARIMA
+2025-10-12,Aksesoris,39.03597912043179,Test,SARIMA
+2025-10-26,Aksesoris,35.059848172260786,Test,SARIMA
+2025-11-09,Aksesoris,31.48871839668054,Test,SARIMA
+2025-11-23,Aksesoris,28.28133714081368,Test,SARIMA
+2025-12-07,Aksesoris,25.40065366892428,Test,SARIMA
+2025-12-21,Aksesoris,48.39217800783607,Future,SARIMA
+2026-01-04,Aksesoris,43.46304234986441,Future,SARIMA
+2026-01-18,Aksesoris,39.03597912043179,Future,SARIMA
+2026-02-01,Aksesoris,49.14900275413529,Future,SARIMA
+2023-01-08,Fashion Bayi & Anak lainnya,199.0,Aktual,SARIMA
+2023-01-22,Fashion Bayi & Anak lainnya,248.0,Aktual,SARIMA
+2023-02-05,Fashion Bayi & Anak lainnya,480.0,Aktual,SARIMA
+2023-02-19,Fashion Bayi & Anak lainnya,500.0,Aktual,SARIMA
+2023-03-05,Fashion Bayi & Anak lainnya,474.0,Aktual,SARIMA
+2023-03-19,Fashion Bayi & Anak lainnya,492.0,Aktual,SARIMA
+2023-04-02,Fashion Bayi & Anak lainnya,704.0,Aktual,SARIMA
+2023-04-16,Fashion Bayi & Anak lainnya,1245.0,Aktual,SARIMA
+2023-04-30,Fashion Bayi & Anak lainnya,470.0,Aktual,SARIMA
+2023-05-14,Fashion Bayi & Anak lainnya,92.0,Aktual,SARIMA
+2023-05-28,Fashion Bayi & Anak lainnya,118.0,Aktual,SARIMA
+2023-06-11,Fashion Bayi & Anak lainnya,467.0,Aktual,SARIMA
+2023-06-25,Fashion Bayi & Anak lainnya,339.0,Aktual,SARIMA
+2023-07-09,Fashion Bayi & Anak lainnya,391.0,Aktual,SARIMA
+2023-07-23,Fashion Bayi & Anak lainnya,414.0,Aktual,SARIMA
+2023-08-06,Fashion Bayi & Anak lainnya,479.0,Aktual,SARIMA
+2023-08-20,Fashion Bayi & Anak lainnya,550.0,Aktual,SARIMA
+2023-09-03,Fashion Bayi & Anak lainnya,526.0,Aktual,SARIMA
+2023-09-17,Fashion Bayi & Anak lainnya,531.0,Aktual,SARIMA
+2023-10-01,Fashion Bayi & Anak lainnya,460.0,Aktual,SARIMA
+2023-10-15,Fashion Bayi & Anak lainnya,294.0,Aktual,SARIMA
+2023-10-29,Fashion Bayi & Anak lainnya,409.0,Aktual,SARIMA
+2023-11-12,Fashion Bayi & Anak lainnya,353.0,Aktual,SARIMA
+2023-11-26,Fashion Bayi & Anak lainnya,336.0,Aktual,SARIMA
+2023-12-10,Fashion Bayi & Anak lainnya,402.0,Aktual,SARIMA
+2023-12-24,Fashion Bayi & Anak lainnya,355.0,Aktual,SARIMA
+2024-01-07,Fashion Bayi & Anak lainnya,363.0,Aktual,SARIMA
+2024-01-21,Fashion Bayi & Anak lainnya,352.0,Aktual,SARIMA
+2024-02-04,Fashion Bayi & Anak lainnya,223.0,Aktual,SARIMA
+2024-02-18,Fashion Bayi & Anak lainnya,241.0,Aktual,SARIMA
+2024-03-03,Fashion Bayi & Anak lainnya,415.0,Aktual,SARIMA
+2024-03-17,Fashion Bayi & Anak lainnya,478.0,Aktual,SARIMA
+2024-03-31,Fashion Bayi & Anak lainnya,1041.0,Aktual,SARIMA
+2024-04-14,Fashion Bayi & Anak lainnya,702.0,Aktual,SARIMA
+2024-04-28,Fashion Bayi & Anak lainnya,49.0,Aktual,SARIMA
+2024-05-12,Fashion Bayi & Anak lainnya,335.0,Aktual,SARIMA
+2024-05-26,Fashion Bayi & Anak lainnya,121.0,Aktual,SARIMA
+2024-06-09,Fashion Bayi & Anak lainnya,238.0,Aktual,SARIMA
+2024-06-23,Fashion Bayi & Anak lainnya,226.0,Aktual,SARIMA
+2024-07-07,Fashion Bayi & Anak lainnya,356.0,Aktual,SARIMA
+2024-07-21,Fashion Bayi & Anak lainnya,256.0,Aktual,SARIMA
+2024-08-04,Fashion Bayi & Anak lainnya,379.0,Aktual,SARIMA
+2024-08-18,Fashion Bayi & Anak lainnya,410.0,Aktual,SARIMA
+2024-09-01,Fashion Bayi & Anak lainnya,301.0,Aktual,SARIMA
+2024-09-15,Fashion Bayi & Anak lainnya,268.0,Aktual,SARIMA
+2024-09-29,Fashion Bayi & Anak lainnya,251.0,Aktual,SARIMA
+2024-10-13,Fashion Bayi & Anak lainnya,223.0,Aktual,SARIMA
+2024-10-27,Fashion Bayi & Anak lainnya,216.0,Aktual,SARIMA
+2024-11-10,Fashion Bayi & Anak lainnya,195.0,Aktual,SARIMA
+2024-11-24,Fashion Bayi & Anak lainnya,343.0,Aktual,SARIMA
+2024-12-08,Fashion Bayi & Anak lainnya,194.0,Aktual,SARIMA
+2024-12-22,Fashion Bayi & Anak lainnya,259.0,Aktual,SARIMA
+2025-01-05,Fashion Bayi & Anak lainnya,275.0,Aktual,SARIMA
+2025-01-19,Fashion Bayi & Anak lainnya,226.0,Aktual,SARIMA
+2025-02-02,Fashion Bayi & Anak lainnya,287.0,Aktual,SARIMA
+2025-02-16,Fashion Bayi & Anak lainnya,349.0,Aktual,SARIMA
+2025-03-02,Fashion Bayi & Anak lainnya,598.0,Aktual,SARIMA
+2025-03-16,Fashion Bayi & Anak lainnya,1144.0,Aktual,SARIMA
+2025-03-30,Fashion Bayi & Anak lainnya,907.0,Aktual,SARIMA
+2025-04-13,Fashion Bayi & Anak lainnya,23.0,Aktual,SARIMA
+2025-04-27,Fashion Bayi & Anak lainnya,130.0,Aktual,SARIMA
+2025-05-11,Fashion Bayi & Anak lainnya,96.0,Aktual,SARIMA
+2025-05-25,Fashion Bayi & Anak lainnya,251.0,Aktual,SARIMA
+2025-06-08,Fashion Bayi & Anak lainnya,254.0,Aktual,SARIMA
+2025-06-22,Fashion Bayi & Anak lainnya,551.0,Aktual,SARIMA
+2025-07-06,Fashion Bayi & Anak lainnya,389.0,Aktual,SARIMA
+2025-07-20,Fashion Bayi & Anak lainnya,240.0,Aktual,SARIMA
+2025-08-03,Fashion Bayi & Anak lainnya,188.0,Aktual,SARIMA
+2025-08-17,Fashion Bayi & Anak lainnya,198.0,Aktual,SARIMA
+2025-08-31,Fashion Bayi & Anak lainnya,246.0,Aktual,SARIMA
+2025-09-14,Fashion Bayi & Anak lainnya,168.0,Aktual,SARIMA
+2025-09-28,Fashion Bayi & Anak lainnya,231.0,Aktual,SARIMA
+2025-10-12,Fashion Bayi & Anak lainnya,157.0,Aktual,SARIMA
+2025-10-26,Fashion Bayi & Anak lainnya,174.0,Aktual,SARIMA
+2025-11-09,Fashion Bayi & Anak lainnya,231.0,Aktual,SARIMA
+2025-11-23,Fashion Bayi & Anak lainnya,172.0,Aktual,SARIMA
+2025-12-07,Fashion Bayi & Anak lainnya,117.0,Aktual,SARIMA
+2025-09-14,Fashion Bayi & Anak lainnya,252.16156264291877,Test,SARIMA
+2025-09-28,Fashion Bayi & Anak lainnya,251.50702846222765,Test,SARIMA
+2025-10-12,Fashion Bayi & Anak lainnya,252.42023853833743,Test,SARIMA
+2025-10-26,Fashion Bayi & Anak lainnya,193.0,Test,SARIMA
+2025-11-09,Fashion Bayi & Anak lainnya,186.0,Test,SARIMA
+2025-11-23,Fashion Bayi & Anak lainnya,248.49152337332237,Test,SARIMA
+2025-12-07,Fashion Bayi & Anak lainnya,173.0,Test,SARIMA
+2025-12-21,Fashion Bayi & Anak lainnya,252.16156264291877,Future,SARIMA
+2026-01-04,Fashion Bayi & Anak lainnya,251.50702846222765,Future,SARIMA
+2026-01-18,Fashion Bayi & Anak lainnya,252.42023853833743,Future,SARIMA
+2026-02-01,Fashion Bayi & Anak lainnya,525.8339945696471,Future,SARIMA
+2023-01-08,Fashion Muslim,145.0,Aktual,SARIMA
+2023-01-22,Fashion Muslim,164.0,Aktual,SARIMA
+2023-02-05,Fashion Muslim,334.0,Aktual,SARIMA
+2023-02-19,Fashion Muslim,436.0,Aktual,SARIMA
+2023-03-05,Fashion Muslim,309.0,Aktual,SARIMA
+2023-03-19,Fashion Muslim,323.0,Aktual,SARIMA
+2023-04-02,Fashion Muslim,603.0,Aktual,SARIMA
+2023-04-16,Fashion Muslim,893.0,Aktual,SARIMA
+2023-04-30,Fashion Muslim,158.0,Aktual,SARIMA
+2023-05-14,Fashion Muslim,21.0,Aktual,SARIMA
+2023-05-28,Fashion Muslim,14.0,Aktual,SARIMA
+2023-06-11,Fashion Muslim,72.0,Aktual,SARIMA
+2023-06-25,Fashion Muslim,161.0,Aktual,SARIMA
+2023-07-09,Fashion Muslim,71.0,Aktual,SARIMA
+2023-07-23,Fashion Muslim,59.0,Aktual,SARIMA
+2023-08-06,Fashion Muslim,156.0,Aktual,SARIMA
+2023-08-20,Fashion Muslim,70.0,Aktual,SARIMA
+2023-09-03,Fashion Muslim,64.0,Aktual,SARIMA
+2023-09-17,Fashion Muslim,34.0,Aktual,SARIMA
+2023-10-01,Fashion Muslim,30.0,Aktual,SARIMA
+2023-10-15,Fashion Muslim,82.0,Aktual,SARIMA
+2023-10-29,Fashion Muslim,35.0,Aktual,SARIMA
+2023-11-12,Fashion Muslim,87.0,Aktual,SARIMA
+2023-11-26,Fashion Muslim,114.0,Aktual,SARIMA
+2023-12-10,Fashion Muslim,84.0,Aktual,SARIMA
+2023-12-24,Fashion Muslim,100.0,Aktual,SARIMA
+2024-01-07,Fashion Muslim,242.0,Aktual,SARIMA
+2024-01-21,Fashion Muslim,182.0,Aktual,SARIMA
+2024-02-04,Fashion Muslim,173.0,Aktual,SARIMA
+2024-02-18,Fashion Muslim,155.0,Aktual,SARIMA
+2024-03-03,Fashion Muslim,207.0,Aktual,SARIMA
+2024-03-17,Fashion Muslim,463.0,Aktual,SARIMA
+2024-03-31,Fashion Muslim,740.0,Aktual,SARIMA
+2024-04-14,Fashion Muslim,393.0,Aktual,SARIMA
+2024-04-28,Fashion Muslim,10.0,Aktual,SARIMA
+2024-05-12,Fashion Muslim,10.0,Aktual,SARIMA
+2024-05-26,Fashion Muslim,5.0,Aktual,SARIMA
+2024-06-09,Fashion Muslim,22.0,Aktual,SARIMA
+2024-06-23,Fashion Muslim,26.0,Aktual,SARIMA
+2024-07-07,Fashion Muslim,49.0,Aktual,SARIMA
+2024-07-21,Fashion Muslim,61.0,Aktual,SARIMA
+2024-08-04,Fashion Muslim,45.0,Aktual,SARIMA
+2024-08-18,Fashion Muslim,37.0,Aktual,SARIMA
+2024-09-01,Fashion Muslim,44.0,Aktual,SARIMA
+2024-09-15,Fashion Muslim,9.0,Aktual,SARIMA
+2024-09-29,Fashion Muslim,63.0,Aktual,SARIMA
+2024-10-13,Fashion Muslim,60.0,Aktual,SARIMA
+2024-10-27,Fashion Muslim,52.0,Aktual,SARIMA
+2024-11-10,Fashion Muslim,26.0,Aktual,SARIMA
+2024-11-24,Fashion Muslim,35.0,Aktual,SARIMA
+2024-12-08,Fashion Muslim,55.0,Aktual,SARIMA
+2024-12-22,Fashion Muslim,104.0,Aktual,SARIMA
+2025-01-05,Fashion Muslim,100.0,Aktual,SARIMA
+2025-01-19,Fashion Muslim,82.0,Aktual,SARIMA
+2025-02-02,Fashion Muslim,103.0,Aktual,SARIMA
+2025-02-16,Fashion Muslim,187.0,Aktual,SARIMA
+2025-03-02,Fashion Muslim,282.0,Aktual,SARIMA
+2025-03-16,Fashion Muslim,502.0,Aktual,SARIMA
+2025-03-30,Fashion Muslim,546.0,Aktual,SARIMA
+2025-04-13,Fashion Muslim,2.0,Aktual,SARIMA
+2025-04-27,Fashion Muslim,9.0,Aktual,SARIMA
+2025-05-11,Fashion Muslim,3.0,Aktual,SARIMA
+2025-05-25,Fashion Muslim,23.0,Aktual,SARIMA
+2025-06-08,Fashion Muslim,59.0,Aktual,SARIMA
+2025-06-22,Fashion Muslim,174.0,Aktual,SARIMA
+2025-07-06,Fashion Muslim,65.0,Aktual,SARIMA
+2025-07-20,Fashion Muslim,28.0,Aktual,SARIMA
+2025-08-03,Fashion Muslim,16.0,Aktual,SARIMA
+2025-08-17,Fashion Muslim,12.0,Aktual,SARIMA
+2025-08-31,Fashion Muslim,33.0,Aktual,SARIMA
+2025-09-14,Fashion Muslim,14.0,Aktual,SARIMA
+2025-09-28,Fashion Muslim,28.0,Aktual,SARIMA
+2025-10-12,Fashion Muslim,14.0,Aktual,SARIMA
+2025-10-26,Fashion Muslim,25.0,Aktual,SARIMA
+2025-11-09,Fashion Muslim,30.0,Aktual,SARIMA
+2025-11-23,Fashion Muslim,40.0,Aktual,SARIMA
+2025-12-07,Fashion Muslim,56.0,Aktual,SARIMA
+2025-09-14,Fashion Muslim,26.374229547828683,Test,SARIMA
+2025-09-28,Fashion Muslim,46.85148339231507,Test,SARIMA
+2025-10-12,Fashion Muslim,46.29819212112427,Test,SARIMA
+2025-10-26,Fashion Muslim,43.6561687045657,Test,SARIMA
+2025-11-09,Fashion Muslim,34.63663480871409,Test,SARIMA
+2025-11-23,Fashion Muslim,37.78690541089667,Test,SARIMA
+2025-12-07,Fashion Muslim,44.76247727303887,Test,SARIMA
+2025-12-21,Fashion Muslim,26.374229547828683,Future,SARIMA
+2026-01-04,Fashion Muslim,46.85148339231507,Future,SARIMA
+2026-01-18,Fashion Muslim,46.29819212112427,Future,SARIMA
+2026-02-01,Fashion Muslim,222.926279118737,Future,SARIMA
+2023-01-08,Pakaian Laki-laki,65.0,Aktual,SARIMA
+2023-01-22,Pakaian Laki-laki,116.0,Aktual,SARIMA
+2023-02-05,Pakaian Laki-laki,104.0,Aktual,SARIMA
+2023-02-19,Pakaian Laki-laki,97.0,Aktual,SARIMA
+2023-03-05,Pakaian Laki-laki,92.0,Aktual,SARIMA
+2023-03-19,Pakaian Laki-laki,179.0,Aktual,SARIMA
+2023-04-02,Pakaian Laki-laki,231.0,Aktual,SARIMA
+2023-04-16,Pakaian Laki-laki,562.0,Aktual,SARIMA
+2023-04-30,Pakaian Laki-laki,239.0,Aktual,SARIMA
+2023-05-14,Pakaian Laki-laki,49.0,Aktual,SARIMA
+2023-05-28,Pakaian Laki-laki,103.0,Aktual,SARIMA
+2023-06-11,Pakaian Laki-laki,32.0,Aktual,SARIMA
+2023-06-25,Pakaian Laki-laki,139.0,Aktual,SARIMA
+2023-07-09,Pakaian Laki-laki,108.0,Aktual,SARIMA
+2023-07-23,Pakaian Laki-laki,144.0,Aktual,SARIMA
+2023-08-06,Pakaian Laki-laki,63.0,Aktual,SARIMA
+2023-08-20,Pakaian Laki-laki,137.0,Aktual,SARIMA
+2023-09-03,Pakaian Laki-laki,202.0,Aktual,SARIMA
+2023-09-17,Pakaian Laki-laki,216.0,Aktual,SARIMA
+2023-10-01,Pakaian Laki-laki,92.0,Aktual,SARIMA
+2023-10-15,Pakaian Laki-laki,90.0,Aktual,SARIMA
+2023-10-29,Pakaian Laki-laki,99.0,Aktual,SARIMA
+2023-11-12,Pakaian Laki-laki,115.0,Aktual,SARIMA
+2023-11-26,Pakaian Laki-laki,218.0,Aktual,SARIMA
+2023-12-10,Pakaian Laki-laki,120.0,Aktual,SARIMA
+2023-12-24,Pakaian Laki-laki,92.0,Aktual,SARIMA
+2024-01-07,Pakaian Laki-laki,90.0,Aktual,SARIMA
+2024-01-21,Pakaian Laki-laki,30.0,Aktual,SARIMA
+2024-02-04,Pakaian Laki-laki,65.0,Aktual,SARIMA
+2024-02-18,Pakaian Laki-laki,67.0,Aktual,SARIMA
+2024-03-03,Pakaian Laki-laki,80.0,Aktual,SARIMA
+2024-03-17,Pakaian Laki-laki,251.0,Aktual,SARIMA
+2024-03-31,Pakaian Laki-laki,406.0,Aktual,SARIMA
+2024-04-14,Pakaian Laki-laki,284.0,Aktual,SARIMA
+2024-04-28,Pakaian Laki-laki,35.0,Aktual,SARIMA
+2024-05-12,Pakaian Laki-laki,43.0,Aktual,SARIMA
+2024-05-26,Pakaian Laki-laki,15.0,Aktual,SARIMA
+2024-06-09,Pakaian Laki-laki,11.0,Aktual,SARIMA
+2024-06-23,Pakaian Laki-laki,24.0,Aktual,SARIMA
+2024-07-07,Pakaian Laki-laki,71.0,Aktual,SARIMA
+2024-07-21,Pakaian Laki-laki,164.0,Aktual,SARIMA
+2024-08-04,Pakaian Laki-laki,61.0,Aktual,SARIMA
+2024-08-18,Pakaian Laki-laki,150.0,Aktual,SARIMA
+2024-09-01,Pakaian Laki-laki,76.0,Aktual,SARIMA
+2024-09-15,Pakaian Laki-laki,84.0,Aktual,SARIMA
+2024-09-29,Pakaian Laki-laki,132.0,Aktual,SARIMA
+2024-10-13,Pakaian Laki-laki,135.0,Aktual,SARIMA
+2024-10-27,Pakaian Laki-laki,92.0,Aktual,SARIMA
+2024-11-10,Pakaian Laki-laki,73.0,Aktual,SARIMA
+2024-11-24,Pakaian Laki-laki,78.0,Aktual,SARIMA
+2024-12-08,Pakaian Laki-laki,82.0,Aktual,SARIMA
+2024-12-22,Pakaian Laki-laki,51.0,Aktual,SARIMA
+2025-01-05,Pakaian Laki-laki,45.0,Aktual,SARIMA
+2025-01-19,Pakaian Laki-laki,58.0,Aktual,SARIMA
+2025-02-02,Pakaian Laki-laki,69.0,Aktual,SARIMA
+2025-02-16,Pakaian Laki-laki,38.0,Aktual,SARIMA
+2025-03-02,Pakaian Laki-laki,146.0,Aktual,SARIMA
+2025-03-16,Pakaian Laki-laki,181.0,Aktual,SARIMA
+2025-03-30,Pakaian Laki-laki,200.0,Aktual,SARIMA
+2025-04-13,Pakaian Laki-laki,6.0,Aktual,SARIMA
+2025-04-27,Pakaian Laki-laki,13.0,Aktual,SARIMA
+2025-05-11,Pakaian Laki-laki,12.0,Aktual,SARIMA
+2025-05-25,Pakaian Laki-laki,19.0,Aktual,SARIMA
+2025-06-08,Pakaian Laki-laki,15.0,Aktual,SARIMA
+2025-06-22,Pakaian Laki-laki,131.0,Aktual,SARIMA
+2025-07-06,Pakaian Laki-laki,67.0,Aktual,SARIMA
+2025-07-20,Pakaian Laki-laki,99.0,Aktual,SARIMA
+2025-08-03,Pakaian Laki-laki,60.0,Aktual,SARIMA
+2025-08-17,Pakaian Laki-laki,43.0,Aktual,SARIMA
+2025-08-31,Pakaian Laki-laki,32.0,Aktual,SARIMA
+2025-09-14,Pakaian Laki-laki,46.0,Aktual,SARIMA
+2025-09-28,Pakaian Laki-laki,41.0,Aktual,SARIMA
+2025-10-12,Pakaian Laki-laki,47.0,Aktual,SARIMA
+2025-10-26,Pakaian Laki-laki,50.0,Aktual,SARIMA
+2025-11-09,Pakaian Laki-laki,54.0,Aktual,SARIMA
+2025-11-23,Pakaian Laki-laki,80.0,Aktual,SARIMA
+2025-12-07,Pakaian Laki-laki,47.0,Aktual,SARIMA
+2025-09-14,Pakaian Laki-laki,45.26994028465604,Test,SARIMA
+2025-09-28,Pakaian Laki-laki,44.545084992715736,Test,SARIMA
+2025-10-12,Pakaian Laki-laki,43.8318359717568,Test,SARIMA
+2025-10-26,Pakaian Laki-laki,43.13000738396085,Test,SARIMA
+2025-11-09,Pakaian Laki-laki,42.439416367115946,Test,SARIMA
+2025-11-23,Pakaian Laki-laki,41.75988298697167,Test,SARIMA
+2025-12-07,Pakaian Laki-laki,41.091230190357,Test,SARIMA
+2025-12-21,Pakaian Laki-laki,45.26994028465604,Future,SARIMA
+2026-01-04,Pakaian Laki-laki,44.545084992715736,Future,SARIMA
+2026-01-18,Pakaian Laki-laki,43.8318359717568,Future,SARIMA
+2026-02-01,Pakaian Laki-laki,127.0509372492504,Future,SARIMA
+2023-01-08,Pakaian Perempuan,84.0,Aktual,SARIMA
+2023-01-22,Pakaian Perempuan,153.0,Aktual,SARIMA
+2023-02-05,Pakaian Perempuan,85.0,Aktual,SARIMA
+2023-02-19,Pakaian Perempuan,65.0,Aktual,SARIMA
+2023-03-05,Pakaian Perempuan,125.0,Aktual,SARIMA
+2023-03-19,Pakaian Perempuan,150.0,Aktual,SARIMA
+2023-04-02,Pakaian Perempuan,200.0,Aktual,SARIMA
+2023-04-16,Pakaian Perempuan,344.0,Aktual,SARIMA
+2023-04-30,Pakaian Perempuan,87.0,Aktual,SARIMA
+2023-05-14,Pakaian Perempuan,103.0,Aktual,SARIMA
+2023-05-28,Pakaian Perempuan,190.0,Aktual,SARIMA
+2023-06-11,Pakaian Perempuan,155.0,Aktual,SARIMA
+2023-06-25,Pakaian Perempuan,117.0,Aktual,SARIMA
+2023-07-09,Pakaian Perempuan,134.0,Aktual,SARIMA
+2023-07-23,Pakaian Perempuan,516.0,Aktual,SARIMA
+2023-08-06,Pakaian Perempuan,258.0,Aktual,SARIMA
+2023-08-20,Pakaian Perempuan,211.0,Aktual,SARIMA
+2023-09-03,Pakaian Perempuan,209.0,Aktual,SARIMA
+2023-09-17,Pakaian Perempuan,362.0,Aktual,SARIMA
+2023-10-01,Pakaian Perempuan,97.0,Aktual,SARIMA
+2023-10-15,Pakaian Perempuan,143.0,Aktual,SARIMA
+2023-10-29,Pakaian Perempuan,140.0,Aktual,SARIMA
+2023-11-12,Pakaian Perempuan,184.0,Aktual,SARIMA
+2023-11-26,Pakaian Perempuan,170.0,Aktual,SARIMA
+2023-12-10,Pakaian Perempuan,131.0,Aktual,SARIMA
+2023-12-24,Pakaian Perempuan,91.0,Aktual,SARIMA
+2024-01-07,Pakaian Perempuan,81.0,Aktual,SARIMA
+2024-01-21,Pakaian Perempuan,116.0,Aktual,SARIMA
+2024-02-04,Pakaian Perempuan,172.0,Aktual,SARIMA
+2024-02-18,Pakaian Perempuan,66.0,Aktual,SARIMA
+2024-03-03,Pakaian Perempuan,68.0,Aktual,SARIMA
+2024-03-17,Pakaian Perempuan,223.0,Aktual,SARIMA
+2024-03-31,Pakaian Perempuan,299.0,Aktual,SARIMA
+2024-04-14,Pakaian Perempuan,275.0,Aktual,SARIMA
+2024-04-28,Pakaian Perempuan,44.0,Aktual,SARIMA
+2024-05-12,Pakaian Perempuan,33.0,Aktual,SARIMA
+2024-05-26,Pakaian Perempuan,149.0,Aktual,SARIMA
+2024-06-09,Pakaian Perempuan,73.0,Aktual,SARIMA
+2024-06-23,Pakaian Perempuan,151.0,Aktual,SARIMA
+2024-07-07,Pakaian Perempuan,140.0,Aktual,SARIMA
+2024-07-21,Pakaian Perempuan,93.0,Aktual,SARIMA
+2024-08-04,Pakaian Perempuan,98.0,Aktual,SARIMA
+2024-08-18,Pakaian Perempuan,142.0,Aktual,SARIMA
+2024-09-01,Pakaian Perempuan,104.0,Aktual,SARIMA
+2024-09-15,Pakaian Perempuan,93.0,Aktual,SARIMA
+2024-09-29,Pakaian Perempuan,77.0,Aktual,SARIMA
+2024-10-13,Pakaian Perempuan,114.0,Aktual,SARIMA
+2024-10-27,Pakaian Perempuan,78.0,Aktual,SARIMA
+2024-11-10,Pakaian Perempuan,111.0,Aktual,SARIMA
+2024-11-24,Pakaian Perempuan,112.0,Aktual,SARIMA
+2024-12-08,Pakaian Perempuan,58.0,Aktual,SARIMA
+2024-12-22,Pakaian Perempuan,60.0,Aktual,SARIMA
+2025-01-05,Pakaian Perempuan,75.0,Aktual,SARIMA
+2025-01-19,Pakaian Perempuan,77.0,Aktual,SARIMA
+2025-02-02,Pakaian Perempuan,30.0,Aktual,SARIMA
+2025-02-16,Pakaian Perempuan,109.0,Aktual,SARIMA
+2025-03-02,Pakaian Perempuan,161.0,Aktual,SARIMA
+2025-03-16,Pakaian Perempuan,174.0,Aktual,SARIMA
+2025-03-30,Pakaian Perempuan,138.0,Aktual,SARIMA
+2025-04-13,Pakaian Perempuan,19.0,Aktual,SARIMA
+2025-04-27,Pakaian Perempuan,60.0,Aktual,SARIMA
+2025-05-11,Pakaian Perempuan,32.0,Aktual,SARIMA
+2025-05-25,Pakaian Perempuan,31.0,Aktual,SARIMA
+2025-06-08,Pakaian Perempuan,97.0,Aktual,SARIMA
+2025-06-22,Pakaian Perempuan,208.0,Aktual,SARIMA
+2025-07-06,Pakaian Perempuan,167.0,Aktual,SARIMA
+2025-07-20,Pakaian Perempuan,63.0,Aktual,SARIMA
+2025-08-03,Pakaian Perempuan,63.0,Aktual,SARIMA
+2025-08-17,Pakaian Perempuan,63.0,Aktual,SARIMA
+2025-08-31,Pakaian Perempuan,78.0,Aktual,SARIMA
+2025-09-14,Pakaian Perempuan,87.0,Aktual,SARIMA
+2025-09-28,Pakaian Perempuan,107.0,Aktual,SARIMA
+2025-10-12,Pakaian Perempuan,54.0,Aktual,SARIMA
+2025-10-26,Pakaian Perempuan,69.0,Aktual,SARIMA
+2025-11-09,Pakaian Perempuan,66.0,Aktual,SARIMA
+2025-11-23,Pakaian Perempuan,56.0,Aktual,SARIMA
+2025-12-07,Pakaian Perempuan,67.0,Aktual,SARIMA
+2025-09-14,Pakaian Perempuan,78.07151930265523,Test,SARIMA
+2025-09-28,Pakaian Perempuan,81.60340939207333,Test,SARIMA
+2025-10-12,Pakaian Perempuan,85.59297657122569,Test,SARIMA
+2025-10-26,Pakaian Perempuan,80.38604366687377,Test,SARIMA
+2025-11-09,Pakaian Perempuan,85.56899158600281,Test,SARIMA
+2025-11-23,Pakaian Perempuan,85.81522728215862,Test,SARIMA
+2025-12-07,Pakaian Perempuan,76.9116531835058,Test,SARIMA
+2025-12-21,Pakaian Perempuan,78.07151930265523,Future,SARIMA
+2026-01-04,Pakaian Perempuan,81.60340939207333,Future,SARIMA
+2026-01-18,Pakaian Perempuan,85.59297657122569,Future,SARIMA
+2026-02-01,Pakaian Perempuan,118.43434536766884,Future,SARIMA
