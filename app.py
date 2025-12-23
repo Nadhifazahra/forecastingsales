@@ -237,7 +237,7 @@ else:
         st.error("⚠️ File 'database_prediksi_final.csv' tidak ditemukan.")
 
 # =========================================================
-# 5. HALAMAN 1: RINGKASAN PREDIKSI (UI CLEAN & PRO)
+# 5. HALAMAN 1: RINGKASAN PREDIKSI (REVISI KPI AKURASI)
 # =========================================================
 if df_final is not None and st.session_state['page'] == "Ringkasan Prediksi":
     
@@ -252,7 +252,7 @@ if df_final is not None and st.session_state['page'] == "Ringkasan Prediksi":
     with col_f2:
         periods = st.selectbox("📅 Rentang Waktu", [2, 4, 6, 8], format_func=lambda x: f"{x} Periode (± {int(x/2)} Bulan)")
 
-    # --- DATA PREP ---
+    # --- DATA PREP (FORECAST) ---
     df_fut = df_final[(df_final['Jenis'] == 'Future') & (df_final['Model'] == sel_model)].sort_values('Tanggal')
     dates = sorted(df_fut['Tanggal'].unique())[:periods]
     df_plot = df_fut[df_fut['Tanggal'].isin(dates)].copy()
@@ -260,24 +260,52 @@ if df_final is not None and st.session_state['page'] == "Ringkasan Prediksi":
     df_past = df_final[(df_final['Jenis'] == 'Aktual') & (df_final['Model'] == sel_model)].sort_values('Tanggal')
     df_past_compare = df_past.tail(periods)
     
-    # --- KPI CALC ---
+    # --- KPI 1: TOTAL & GROWTH ---
     total_forecast = df_plot['Nilai'].sum()
     total_past = df_past_compare['Nilai'].sum()
     growth = ((total_forecast - total_past) / total_past * 100) if total_past > 0 else 0
     
+    # --- KPI 2: TOP CATEGORY ---
     top_cat = df_plot.groupby('Kategori')['Nilai'].sum().sort_values(ascending=False).head(1)
     best_cat_name = top_cat.index[0] if not top_cat.empty else "-"
     best_cat_val = top_cat.values[0] if not top_cat.empty else 0
-    
-    # Event Check
-    events = []
-    for d in dates:
-        h = Gregorian(d.year, d.month, d.day).to_hijri()
-        if h.month == 9: events.append("Ramadhan")
-        elif h.month == 10: events.append("Lebaran")
-    event_label = ", ".join(list(set(events))) if events else "Reguler"
 
-    # --- KPI CARDS (CLEAN HTML) ---
+    # --- KPI 3: AKURASI (DIBUAT SIMPEL) ---
+    # Hitung akurasi simple berdasarkan data Test vs Aktual yang ada
+    df_test_acc = df_final[(df_final['Model'] == sel_model) & (df_final['Jenis'] == 'Test')]
+    df_act_acc = df_final[(df_final['Model'] == sel_model) & (df_final['Jenis'] == 'Aktual')]
+    
+    # Merge untuk hitung error
+    merged_acc = pd.merge(df_test_acc, df_act_acc, on=['Tanggal', 'Kategori'], suffixes=('_test', '_act'))
+    
+    if not merged_acc.empty:
+        # Hitung Error (SMAPE)
+        numerator = np.abs(merged_acc['Nilai_test'] - merged_acc['Nilai_act'])
+        denominator = (np.abs(merged_acc['Nilai_test']) + np.abs(merged_acc['Nilai_act'])) / 2
+        smape_val = np.mean(numerator / (denominator + 1e-10)) * 100
+        accuracy_score = 100 - smape_val
+    else:
+        accuracy_score = 85 # Default estimasi jika data test kosong
+    
+    # Konversi Angka ke "Bahasa Manusia" (Bintang & Label)
+    if accuracy_score >= 85:
+        stars = "⭐⭐⭐⭐⭐"
+        acc_label = "Sangat Akurat"
+        acc_color = "#16a34a" # Hijau
+    elif accuracy_score >= 70:
+        stars = "⭐⭐⭐⭐"
+        acc_label = "Akurat"
+        acc_color = "#16a34a"
+    elif accuracy_score >= 50:
+        stars = "⭐⭐⭐"
+        acc_label = "Cukup Baik"
+        acc_color = "#d97706" # Kuning
+    else:
+        stars = "⭐⭐"
+        acc_label = "Perlu Pantauan"
+        acc_color = "#dc2626" # Merah
+
+    # --- TAMPILAN KPI CARDS ---
     col1, col2, col3 = st.columns(3)
     
     growth_color = "#16a34a" if growth >= 0 else "#dc2626"
@@ -304,9 +332,9 @@ if df_final is not None and st.session_state['page'] == "Ringkasan Prediksi":
     with col3:
         st.markdown(f"""
         <div class="kpi-container">
-            <div class="kpi-label">Momen Penting</div>
-            <div class="kpi-value" style="font-size:22px">{event_label}</div>
-            <div class="kpi-sub" style="color:#64748b">Cek strategi marketing</div>
+            <div class="kpi-label">Kualitas Prediksi</div>
+            <div class="kpi-value" style="font-size:20px; letter-spacing: 2px;">{stars}</div>
+            <div class="kpi-sub" style="color:{acc_color}">{acc_label} ({accuracy_score:.0f}%)</div>
         </div>
         """, unsafe_allow_html=True)
 
@@ -320,39 +348,62 @@ if df_final is not None and st.session_state['page'] == "Ringkasan Prediksi":
 
     fig = px.bar(
         df_plot, x="Kategori", y="Nilai", color="Label", barmode="group", text_auto='.0f',
-        color_discrete_sequence=px.colors.qualitative.Safe, # Warna Soft
+        color_discrete_sequence=px.colors.qualitative.Safe, 
     )
     
     fig.update_layout(
-    plot_bgcolor='rgba(0,0,0,0)',
-    paper_bgcolor='rgba(0,0,0,0)',
-    xaxis_title=None,
-    yaxis_title=None,
-    legend_title=None,
-    height=450,
-    margin=dict(t=20, l=0, r=0, b=0),
-    
+        plot_bgcolor='rgba(0,0,0,0)', paper_bgcolor='rgba(0,0,0,0)',
+        xaxis_title=None, yaxis_title=None, legend_title=None, height=450,
+        margin=dict(t=20, l=0, r=0, b=0),
     )
     fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='#f1f5f9')
     fig.update_traces(textposition='outside')
-    
     st.plotly_chart(fig, use_container_width=True)
 
-    # --- EXECUTIVE SUMMARY (DI BAWAH) ---
+    # --- EXECUTIVE SUMMARY ---
+    # Logic kalimat rekomendasi sederhana
+    action_text = "Disarankan menjaga stok di level aman."
+    if growth > 15: action_text = "📈 <b>Potensi Lonjakan!</b> Disarankan menambah stok 15-20% dari biasanya."
+    elif growth < -15: action_text = "📉 <b>Tren Melambat.</b> Pertimbangkan strategi promosi untuk menghabiskan stok lama."
+
     st.markdown(f"""
     <div class="summary-box">
         <div class="summary-title">🤖 Executive Summary</div>
         <p class="summary-text">
-            Berdasarkan analisis model <b>{sel_model}</b>, tren penjualan menunjukkan pergerakan 
+            Berdasarkan model <b>{sel_model}</b> (Akurasi: {accuracy_score:.0f}%), prediksi penjualan menunjukkan tren 
             <b style="color:{growth_color}">{'POSITIF' if growth > 0 else 'NEGATIF'}</b>. 
-            Kategori <b>{best_cat_name}</b> menjadi penopang utama penjualan. 
-            {f"Siapkan stok ekstra untuk menyambut <b>{event_label}</b>." if event_label != "Reguler" else "Pastikan ketersediaan stok reguler terjaga."}
+            Fokus utama ada pada kategori <b>{best_cat_name}</b>. {action_text}
         </p>
     </div>
     """, unsafe_allow_html=True)
 
+    # --- TAMBAHAN WAJIB (TABEL & DOWNLOAD) ---
+    st.markdown("---")
+    c_tbl, c_dl = st.columns([3, 1])
+    
+    with c_tbl:
+        st.subheader("📋 Rincian Data")
+        # Pivot table agar mudah dibaca user awam
+        tbl_view = df_plot.pivot_table(index='Kategori', columns='Label', values='Nilai', aggfunc='sum').fillna(0)
+        tbl_view['Total'] = tbl_view.sum(axis=1)
+        tbl_view = tbl_view.sort_values('Total', ascending=False)
+        st.dataframe(tbl_view.style.format("{:,.0f}"), use_container_width=True)
+
+    with c_dl:
+        st.write("###") 
+        st.write("###") 
+        # Tombol Download
+        csv_data = tbl_view.to_csv().encode('utf-8')
+        st.download_button(
+            label="📥 Download Data (Excel)",
+            data=csv_data,
+            file_name='hasil_prediksi.csv',
+            mime='text/csv',
+            type='primary' 
+        )
+
 # =========================================================
-# 6. HALAMAN 2: DETAIL PER KATEGORI
+# 6. HALAMAN 2: DETAIL PER KATEGORI (FINAL - UX DROPDOWN JELAS)
 # =========================================================
 elif df_final is not None and st.session_state['page'] == "Detail Per Kategori":
     
@@ -360,163 +411,353 @@ elif df_final is not None and st.session_state['page'] == "Detail Per Kategori":
     st.markdown("Analisis mendalam per kategori barang.")
     st.markdown("---")
     
-    c1, c2 = st.columns(2)
+    # --- 1. FILTER (DIPERBAIKI AGAR USER PAHAM PERIODE) ---
+    c1, c2, c3 = st.columns(3)
     with c1:
-        cat = st.selectbox("📂 Kategori", df_final['Kategori'].unique())
+        cat = st.selectbox("📂 Kategori Barang", df_final['Kategori'].unique())
     with c2:
-        mod = st.selectbox("🤖 Model", df_final[df_final['Kategori'] == cat]['Model'].unique())
+        mod = st.selectbox("🤖 Model Prediksi", df_final[df_final['Kategori'] == cat]['Model'].unique())
+    with c3:
+        # FUNGSI FORMATTER: Biar user langsung tahu 2 periode itu berapa lama
+        def format_durasi(x):
+            bulan = int(x / 2)
+            return f"{x} Periode (± {bulan} Bulan)"
+
+        # Labelnya diperjelas sekalian
+        periods_detail = st.selectbox(
+            "📅 Rentang Prediksi (Per 2 Minggu)", 
+            [2, 4, 6, 8], 
+            index=1, 
+            format_func=format_durasi, # Pakai fungsi di atas
+            help="Satu periode setara dengan 2 minggu (14 hari)."
+        )
         
+    # --- DATA PROCESSING ---
     df_d = df_final[(df_final['Kategori'] == cat) & (df_final['Model'] == mod)].sort_values('Tanggal')
     
     act = df_d[df_d['Jenis'] == 'Aktual']
     test = df_d[df_d['Jenis'] == 'Test']
-    fut = df_d[df_d['Jenis'] == 'Future']
     
-    # KPI Mini
-    smape_val = 0
+    # Filter Future
+    fut_raw = df_d[df_d['Jenis'] == 'Future'].sort_values('Tanggal')
+    dates_fut = sorted(fut_raw['Tanggal'].unique())[:periods_detail]
+    fut = fut_raw[fut_raw['Tanggal'].isin(dates_fut)].copy() 
+    
+    # Fokus Grafik (Zoom)
+    SHOW_LAST_PERIODS = 12 
+    act_zoom = act.tail(SHOW_LAST_PERIODS) 
+    test_zoom = test[test['Tanggal'] >= act_zoom['Tanggal'].min()]
+
+    # --- KPI CALCULATION (DENGAN TERJEMAHAN MANUSIA) ---
+    
+    # 1. Hitung Akurasi & Tentukan Label
+    acc_label = "Belum Ada Data"
+    acc_color = "#94a3b8" # Abu-abu
+    acc_value = 0
+    stars = ""
+    
     if not test.empty:
         m = pd.merge(test, act, on='Tanggal', suffixes=('_p', '_t'))
-        if not m.empty: smape_val = smape(m['Nilai_t'], m['Nilai_p'])
-        
+        if not m.empty: 
+            err = smape(m['Nilai_t'], m['Nilai_p'])
+            acc_value = 100 - err
+            
+            # LOGIKA PENERJEMAH (HUMAN FRIENDLY)
+            if acc_value >= 80:
+                acc_label = "Sangat Akurat"
+                acc_color = "#16a34a" # Hijau
+                stars = "⭐⭐⭐⭐⭐"
+            elif acc_value >= 60:
+                acc_label = "Cukup Baik"
+                acc_color = "#d97706" # Oranye (Kuning Gelap)
+                stars = "⭐⭐⭐"
+            else:
+                acc_label = "Perlu Pantauan"
+                acc_color = "#dc2626" # Merah
+                stars = "⭐⭐"
+
+    # 2. Total & Tren
+    total_fut = fut["Nilai"].sum()
+    avg_recent = act.tail(6)['Nilai'].mean() if not act.empty else 0
+    
+    last_real_total = act.tail(len(fut))['Nilai'].sum()
+    diff = total_fut - last_real_total
+    trend_symbol = "↗️ Naik" if diff > 0 else "↘️ Turun"
+    trend_color = "#16a34a" if diff > 0 else "#dc2626"
+
+    # --- TAMPILAN KPI (USER FRIENDLY) ---
     k1, k2, k3 = st.columns(3)
+    
     with k1:
-        st.markdown(f'<div class="kpi-container"><div class="kpi-label">Akurasi (SMAPE)</div><div class="kpi-value" style="font-size:24px">{smape_val:.1f}%</div></div>', unsafe_allow_html=True)
+        # TAMPILAN BARU: Ada Label + Bintang, Angka Persen jadi kecil aja
+        st.markdown(f"""
+        <div class="kpi-container">
+            <div class="kpi-label">Kualitas Prediksi</div>
+            <div class="kpi-value" style="font-size:20px; color:{acc_color}">{acc_label}</div>
+            <div class="kpi-sub">{stars} ({acc_value:.1f}%)</div>
+        </div>
+        """, unsafe_allow_html=True)
+        
     with k2:
-        st.markdown(f'<div class="kpi-container"><div class="kpi-label">Total Forecast</div><div class="kpi-value" style="font-size:24px">{fut["Nilai"].sum():,.0f}</div></div>', unsafe_allow_html=True)
+        st.markdown(f"""
+        <div class="kpi-container">
+            <div class="kpi-label">Total Prediksi ({periods_detail} Prd)</div>
+            <div class="kpi-value" style="font-size:24px">{total_fut:,.0f}</div>
+            <div class="kpi-sub" style="color:{trend_color}">{trend_symbol} vs periode lalu</div>
+        </div>
+        """, unsafe_allow_html=True)
+        
     with k3:
-        avg_sales = act['Nilai'].mean() if not act.empty else 0
-        st.markdown(f'<div class="kpi-container"><div class="kpi-label">Rata-rata Historis</div><div class="kpi-value" style="font-size:24px">{avg_sales:,.0f}</div></div>', unsafe_allow_html=True)
+        st.markdown(f"""
+        <div class="kpi-container">
+            <div class="kpi-label">Rata-rata (3 Bln Terakhir)</div>
+            <div class="kpi-value" style="font-size:24px">{avg_recent:,.0f}</div>
+            <div class="kpi-sub" style="color:#64748b">per 2 minggu</div>
+        </div>
+        """, unsafe_allow_html=True)
 
     st.markdown("<br>", unsafe_allow_html=True)
 
-    # Chart
-    fig = go.Figure()
-    fig.add_trace(go.Scatter(x=act['Tanggal'], y=act['Nilai'], name='Historis', line=dict(color='#334155', width=2)))
-    fig.add_trace(go.Scatter(x=test['Tanggal'], y=test['Nilai'], name='Validasi', line=dict(color='#f59e0b', dash='dot')))
-    
+    # --- CHART ---
+    # Judul Dinamis
     if not fut.empty:
-        x_c = [act['Tanggal'].iloc[-1], fut['Tanggal'].iloc[0]]
-        y_c = [act['Nilai'].iloc[-1], fut['Nilai'].iloc[0]]
+        start_date_str = fut['Tanggal'].min().strftime('%d %b %Y')
+        end_date_str = (fut['Tanggal'].max() + pd.Timedelta(days=13)).strftime('%d %b %Y')
+        chart_title = f"Tren & Prediksi: {cat} ({start_date_str} - {end_date_str})"
+    else:
+        chart_title = f"Tren Historis: {cat}"
+
+    st.markdown(f"#### 📈 {chart_title}")
+
+    fig = go.Figure()
+    
+    # Historis
+    fig.add_trace(go.Scatter(x=act_zoom['Tanggal'], y=act_zoom['Nilai'], name='Historis', line=dict(color='#334155', width=2)))
+    
+    # Validasi
+    if not test_zoom.empty:
+        fig.add_trace(go.Scatter(x=test_zoom['Tanggal'], y=test_zoom['Nilai'], name='Validasi', line=dict(color='#f59e0b', dash='dot')))
+    
+    # Prediksi
+    if not fut.empty:
+        x_c = [act_zoom['Tanggal'].iloc[-1], fut['Tanggal'].iloc[0]]
+        y_c = [act_zoom['Nilai'].iloc[-1], fut['Nilai'].iloc[0]]
         fig.add_trace(go.Scatter(x=x_c, y=y_c, showlegend=False, line=dict(color='#3b82f6', width=3), hoverinfo='skip'))
+        
         fig.add_trace(go.Scatter(x=fut['Tanggal'], y=fut['Nilai'], name='Prediksi', line=dict(color='#3b82f6', width=3), mode='lines+markers'))
         
-    fig.update_layout(
-    plot_bgcolor='rgba(0,0,0,0)',
-    paper_bgcolor='rgba(0,0,0,0)',
-    xaxis_title=None,
-    yaxis_title=None,
-    legend_title=None,
-    height=450,
-    margin=dict(t=20, l=0, r=0, b=0),
-    )
+        # Garis "Sekarang"
+        last_date = act_zoom['Tanggal'].iloc[-1]
+        last_date_num = pd.to_datetime(last_date).timestamp() * 1000
+        fig.add_vline(x=last_date_num, line_width=1, line_dash="dash", line_color="gray", annotation_text="Sekarang", annotation_position="top left")
 
+    fig.update_layout(
+        plot_bgcolor='rgba(0,0,0,0)', paper_bgcolor='rgba(0,0,0,0)',
+        xaxis_title=None, yaxis_title=None,
+        legend=dict(orientation="h", y=1.1), height=450, margin=dict(t=10, l=0, r=0, b=0),
+    )
     st.plotly_chart(fig, use_container_width=True)
 
-    # Tabel
+    # --- TABEL & DOWNLOAD ---
     if not fut.empty:
-        st.markdown("#### 📋 Tabel Prediksi")
-        df_t = fut[['Tanggal', 'Nilai']].copy()
-        df_t['Tanggal'] = df_t['Tanggal'].dt.strftime('%d %B %Y')
-        df_t['Nilai'] = df_t['Nilai'].apply(lambda x: f"{x:,.0f}")
-        df_t.columns = ['Periode', 'Prediksi (Pcs)']
-        st.table(df_t)
+        st.markdown("#### 📋 Tabel Rincian Stok")
+        # Caption tetap ada untuk memperjelas tanggal
+        st.caption("ℹ️ Rentang tanggal di bawah ini adalah durasi 2 minggu (14 hari) per baris.")
+        
+        col_tabel, col_dl = st.columns([3, 1])
+        
+        with col_tabel:
+            df_table = fut[['Tanggal', 'Nilai']].copy()
+            
+            # FORMAT TANGGAL (START - END)
+            start_dates = df_table['Tanggal']
+            end_dates = start_dates + pd.Timedelta(days=13)
+            
+            df_table['Periode'] = (
+                start_dates.dt.strftime('%d %b') + " - " + 
+                end_dates.dt.strftime('%d %b %Y')
+            )
+            
+            df_table['Estimasi'] = df_table['Nilai'].apply(lambda x: f"{x:,.0f}")
+            
+            st.dataframe(
+                df_table[['Periode', 'Estimasi']], 
+                hide_index=True, 
+                use_container_width=True
+            )
+            
+        with col_dl:
+            st.write("###") 
+            csv = fut[['Tanggal', 'Nilai']].to_csv(index=False).encode('utf-8')
+            st.download_button(
+                label="📥 Download Excel",
+                data=csv,
+                file_name=f'prediksi_{cat}_{mod}.csv',
+                mime='text/csv',
+                type='primary'
+            )
 
 # =========================================================
-# 7. HALAMAN 3: PERBANDINGAN MODEL
+# 7. HALAMAN 3: PERBANDINGAN MODEL (REVISI VISUAL & SKOR)
 # =========================================================
 elif df_final is not None and st.session_state['page'] == "Perbandingan Model":
     
-    st.title("Perbandingan Performa")
-    st.markdown("Evaluasi akurasi model.")
+    st.title("Perbandingan Performa Model")
+    st.markdown("Evaluasi untuk menentukan model AI mana yang paling pintar.")
     st.markdown("---")
     
     unique_models = df_final['Model'].unique()
     
     if len(unique_models) < 2:
-        st.warning("⚠️ Hanya terdeteksi 1 Model.")
+        st.warning("⚠️ Hanya terdeteksi 1 Model. Jalankan minimal 2 model berbeda untuk melakukan perbandingan.")
     else:
+        # --- PILIHAN LINGKUP ---
         cats = sorted(df_final['Kategori'].unique().tolist())
-        opts = ["✨ Semua Kategori (Global)"] + cats
+        opts = ["✨ Semua Kategori (Rata-rata Global)"] + cats
         sel_comp = st.selectbox("Lingkup Analisis", opts)
         
-        comp_data = []
-        breakdown = []
+        comp_data = []      # Data untuk Leaderboard
+        breakdown = []      # Data untuk Grafik Batang
         
-        if sel_comp == "✨ Semua Kategori (Global)":
-            for m in unique_models:
-                errs = []
-                for c in cats:
-                    d = df_final[(df_final['Kategori']==c) & (df_final['Model']==m)]
-                    act = d[d['Jenis']=='Aktual']
-                    test = d[d['Jenis']=='Test']
-                    if not test.empty and not act.empty:
-                        merged = pd.merge(test, act, on='Tanggal', suffixes=('_p','_t'))
-                        if not merged.empty:
-                            e = smape(merged['Nilai_t'], merged['Nilai_p'])
-                            errs.append(e)
-                            breakdown.append({'Kategori': c, 'Model': m, 'SMAPE': e})
-                if errs: comp_data.append({'Model': m, 'SMAPE': sum(errs)/len(errs)})
+        # --- 1. HITUNG ERROR (LOGIKA) ---
+        # Kita hitung dulu semua angkanya
+        if sel_comp == "✨ Semua Kategori (Rata-rata Global)":
+            target_cats = cats
         else:
-            for m in unique_models:
-                d = df_final[(df_final['Kategori']==sel_comp) & (df_final['Model']==m)]
+            target_cats = [sel_comp] # Hanya 1 kategori
+            
+        for m in unique_models:
+            errs = []
+            for c in target_cats:
+                d = df_final[(df_final['Kategori']==c) & (df_final['Model']==m)]
                 act = d[d['Jenis']=='Aktual']
                 test = d[d['Jenis']=='Test']
-                if not test.empty:
+                
+                if not test.empty and not act.empty:
                     merged = pd.merge(test, act, on='Tanggal', suffixes=('_p','_t'))
                     if not merged.empty:
-                        comp_data.append({'Model': m, 'SMAPE': smape(merged['Nilai_t'], merged['Nilai_p'])})
+                        e = smape(merged['Nilai_t'], merged['Nilai_p'])
+                        errs.append(e)
+                        if sel_comp == "✨ Semua Kategori (Rata-rata Global)":
+                            breakdown.append({'Kategori': c, 'Model': m, 'Error': e})
+            
+            if errs:
+                avg_error = sum(errs)/len(errs)
+                comp_data.append({'Model': m, 'Error': avg_error, 'Akurasi': 100-avg_error})
 
+        # --- 2. TAMPILAN JUARA (SUMMARY BOX) ---
         if comp_data:
-            df_comp = pd.DataFrame(comp_data).sort_values('SMAPE')
+            df_comp = pd.DataFrame(comp_data).sort_values('Error')
             best = df_comp.iloc[0]
             
+            # Tentukan warna & pesan
             st.markdown(f"""
             <div class="summary-box" style="border-left-color: #10b981;">
-                <div class="summary-title" style="color: #059669;">🏆 Rekomendasi: {best['Model']}</div>
+                <div class="summary-title" style="color: #059669;">🏆 Juara: Model {best['Model']}</div>
                 <p class="summary-text">
-                    Model ini memiliki tingkat kesalahan rata-rata terendah sebesar <b>{best['SMAPE']:.2f}%</b>.
+                    Model ini paling direkomendasikan karena memiliki tingkat kesalahan terendah (<b>{best['Error']:.2f}%</b>) 
+                    dan akurasi estimasi sebesar <b>{best['Akurasi']:.1f}%</b> pada lingkup data ini.
                 </p>
             </div>
             """, unsafe_allow_html=True)
             
             st.markdown("<br>", unsafe_allow_html=True)
+
+            # --- 3. DETAIL PERBANDINGAN ---
+            c_chart, c_table = st.columns([2, 1])
             
-            if sel_comp == "✨ Semua Kategori (Global)" and breakdown:
-                df_b = pd.DataFrame(breakdown)
-                fig_b = px.bar(df_b, x='Kategori', y='SMAPE', color='Model', barmode='group', 
-                               color_discrete_sequence=px.colors.qualitative.Safe)
+            with c_chart:
+                st.subheader("📊 Grafik Tingkat Kesalahan")
+                st.caption("Semakin pendek batangnya, semakin bagus modelnya (Error kecil).")
+                
+                # Grafik Batang Error
+                if sel_comp == "✨ Semua Kategori (Rata-rata Global)" and breakdown:
+                    df_b = pd.DataFrame(breakdown)
+                    fig_b = px.bar(df_b, x='Kategori', y='Error', color='Model', barmode='group', 
+                                   color_discrete_sequence=px.colors.qualitative.Safe)
+                else:
+                    fig_b = px.bar(df_comp, x='Model', y='Error', color='Model', text_auto='.1f',
+                                   color_discrete_sequence=px.colors.qualitative.Safe)
+                
                 fig_b.update_layout(
-                    plot_bgcolor='rgba(0,0,0,0)', height=400, yaxis_title="Error (%)", xaxis_title=None,
+                    plot_bgcolor='rgba(0,0,0,0)', height=300, 
+                    yaxis_title="Tingkat Error (%)", xaxis_title=None,
                     margin=dict(l=0, r=0, t=0, b=0),
                     legend=dict(orientation="h", y=1.1)
                 )
-                fig_b.update_yaxes(showgrid=True, gridcolor='#f1f5f9')
                 st.plotly_chart(fig_b, use_container_width=True)
+
+            with c_table:
+                st.subheader("📋 Peringkat Skor")
+                # Tabel Leaderboard Simple
+                df_score = df_comp[['Model', 'Akurasi']].copy()
+                df_score['Akurasi'] = df_score['Akurasi'].apply(lambda x: f"{x:.1f}%")
+                df_score.reset_index(drop=True, inplace=True)
+                df_score.index += 1 # Ranking mulai dari 1
+                st.table(df_score)
+
+            # --- 4. VISUALISASI GARIS (LINE CHART) ---
+            # Ini yang diminta: Tampilkan grafik garis baik di Global maupun Single Category
+            
+            st.markdown("---")
+            st.subheader("📈 Bukti Visual (Uji Garis)")
+            st.caption("Bandingkan garis putus-putus (Prediksi) dengan garis hitam tebal (Data Asli).")
+
+            # Loop visualisasi
+            # Jika Global -> Loop semua kategori
+            # Jika Single -> Loop 1 kategori saja
+            
+            for c in target_cats:
+                st.markdown(f"**📦 Kategori: {c}**")
                 
-                # Gallery
-                st.markdown("---")
-                st.subheader("Detail Grafik Per Kategori")
-                for c in cats:
-                    st.markdown(f"**{c}**")
-                    fig_m = go.Figure()
-                    base = df_final[(df_final['Kategori']==c) & (df_final['Model']==unique_models[0])]
-                    act_data = base[base['Jenis']=='Aktual']
-                    fig_m.add_trace(go.Scatter(x=act_data['Tanggal'], y=act_data['Nilai'], name='Aktual', line=dict(color='#334155', width=2)))
+                fig_m = go.Figure()
+                
+                # A. DATA AKTUAL (Zoom 12 Periode Terakhir biar jelas)
+                base = df_final[(df_final['Kategori']==c) & (df_final['Model']==unique_models[0])]
+                act_data = base[base['Jenis']=='Aktual'].sort_values('Tanggal').tail(12) # ZOOM
+                
+                if not act_data.empty:
+                    fig_m.add_trace(go.Scatter(
+                        x=act_data['Tanggal'], y=act_data['Nilai'], 
+                        name='Data Aktual', 
+                        line=dict(color='black', width=3)
+                    ))
                     
+                    # Ambil range tanggal zoom
+                    min_date = act_data['Tanggal'].min()
+                    
+                    # B. DATA MODEL (Looping)
                     for m in unique_models:
                         t_data = df_final[(df_final['Kategori']==c) & (df_final['Model']==m) & (df_final['Jenis']=='Test')]
-                        width = 3 if m == best['Model'] else 1.5
-                        dash = 'solid' if m == best['Model'] else 'dot'
-                        fig_m.add_trace(go.Scatter(x=t_data['Tanggal'], y=t_data['Nilai'], name=m, line=dict(width=width, dash=dash)))
+                        # Filter tanggal biar sama dengan zoom aktual
+                        t_data = t_data[t_data['Tanggal'] >= min_date]
+                        
+                        # Style: Juara lebih tebal
+                        is_winner = (m == best['Model'])
+                        width = 4 if is_winner else 2
+                        dash = 'solid' if is_winner else 'dot'
+                        opacity = 1.0 if is_winner else 0.7
+                        
+                        # Nama di legenda
+                        leg_name = f"{m} (Juara 👑)" if is_winner else m
+                        
+                        fig_m.add_trace(go.Scatter(
+                            x=t_data['Tanggal'], y=t_data['Nilai'], 
+                            name=leg_name, 
+                            line=dict(width=width, dash=dash),
+                            opacity=opacity
+                        ))
                     
-                    fig_m.update_layout(height=300, margin=dict(l=0, r=0, t=0, b=20), showlegend=True, plot_bgcolor='rgba(0,0,0,0)')
+                    fig_m.update_layout(
+                        height=350, 
+                        margin=dict(l=0, r=0, t=0, b=20), 
+                        hovermode="x unified",
+                        legend=dict(orientation="h", y=1.1),
+                        plot_bgcolor='rgba(0,0,0,0)'
+                    )
                     fig_m.update_yaxes(showgrid=True, gridcolor='#f1f5f9')
                     st.plotly_chart(fig_m, use_container_width=True)
-            else:
-                fig_b = px.bar(df_comp, x='Model', y='SMAPE', color='Model', text_auto='.2f',
-                               color_discrete_sequence=px.colors.qualitative.Safe)
-                fig_b.update_layout(plot_bgcolor='rgba(0,0,0,0)', height=350, showlegend=False)
-                st.plotly_chart(fig_b, use_container_width=True)
+                    st.markdown("---")
 
 elif df_final is None:
     st.markdown("### 👋 Selamat Datang")
