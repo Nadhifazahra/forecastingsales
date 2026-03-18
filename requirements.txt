@@ -9,3 +9,4 @@ statsmodels
 hijridate
 joblib
 protobuf<=3.20.3
+psutil
